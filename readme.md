@@ -1,8 +1,14 @@
 <a href="#"><img width="100%" height="auto" src="https://i.imgur.com/iXuL1HG.png" height="175px"/></a>
 
+<h1 align='center'><img href="https://readme-typing-svg.herokuapp.com?color=F7F7F7&lines=Hello+World+%F0%9F%91%8B;I'm+V+Rishikesh;Quick+fox+jumps+nightly+above+wizard"></img></h3>
 <h1 align="center">Hello World <img src="https://raw.githubusercontent.com/MartinHeinz/MartinHeinz/master/wave.gif" width="30px">, I'm V RISHIKESH</h1>
 <h3 align="center">A Student exploring the field of development.</h3>
 
+
+<!-- Sankes Eating My Repo -->
+<div align="center">
+    <img src="https://raw.githubusercontent.com/tanyarajhans/Actions/8c98d54e553ad39cc96a021fe1f07e5905b6a387/github-contribution-grid-snake.svg" alt="Snakes Eating My Repo">
+</div>
 
 ## 🙋‍♂️ About Me
 
@@ -75,3 +81,9 @@
     <img src="https://komarev.com/ghpvc/?username=rishikesh013">
 </a>
 <a href="https://github.com/rishikesh013?tab=followers"><img src="https://img.shields.io/github/followers/rishikesh013?label=Followers&style=social" alt="GitHub Badge"></a>
+
+  <!-- gif for programmers -->
+
+<div align="center">
+<img src="https://octodex.github.com/images/daftpunktocat-guy.gif" width="290"/>
+</div>
