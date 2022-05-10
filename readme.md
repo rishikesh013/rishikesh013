@@ -89,3 +89,10 @@
 <div align="center">
 <img src="https://octodex.github.com/images/daftpunktocat-guy.gif" width="290"/>
 </div>
+
+## ❤ Views and Followers
+<div align="center">
+<a href="https://github.com/rishikesh013/">
+    <img src="https://komarev.com/ghpvc/?username=rishikesh013">
+</a>
+<a href="https://github.com/rishikesh013?tab=followers"><img src="https://img.shields.io/github/followers/rishikesh013?label=Followers&style=social" alt="GitHub Badge"></a></div>
