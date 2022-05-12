@@ -11,6 +11,7 @@
 </div>
 
 ## 🙋‍♂️ About Me
+<p align="center"> 
 
 - 🔭 I’m currently student
 
@@ -23,6 +24,8 @@
 - 📫 How to reach me **rishikesh1113@gmail.com**
 
 - ⚡ Fun fact **I play games and go to the GYM very often.**
+    
+    </p>
 
 ## 🚀 Languages and Tools:
 
