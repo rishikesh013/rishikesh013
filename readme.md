@@ -19,7 +19,7 @@
 
 - 👯 I’m looking to collaborate on **OpenSource Projects**
 
-- 👨‍💻 All of my projects are available at **[GIT HUB](https://github.com/rishikesh013)**
+- 👨‍💻 All of my projects are available at **[GIT HUB](https://github.com/rishikesh013?tab=repositories)**
 
 - 📫 How to reach me **rishikesh1113@gmail.com**
 
