@@ -24,8 +24,8 @@
 - 📫 How to reach me **rishikesh1113@gmail.com**
 
 - ⚡ Fun fact **I play games and go to the GYM very often.**
-    
-    </p>
+
+</p>
 
 ## 🚀 Languages and Tools:
 
