@@ -1,7 +1,7 @@
 <a href="#"><img width="100%" height="auto" src="https://i.imgur.com/iXuL1HG.png" height="175px"/></a>
 
 <h1 align='center'><img href="https://readme-typing-svg.herokuapp.com?color=F7F7F7&lines=Hello+World+%F0%9F%91%8B;I'm+V+Rishikesh;Quick+fox+jumps+nightly+above+wizard"></img></h3>
-<h1 align="center">Hello World <img src="https://raw.githubusercontent.com/MartinHeinz/MartinHeinz/master/wave.gif" width="30px">, I'm V RISHIKESH</h1>
+<h1 align="center">Hello World <img src="https://raw.githubusercontent.com/MartinHeinz/MartinHeinz/master/wave.gif" width="5px">, I'm V RISHIKESH</h1>
 <h3 align="center">A Student exploring the field of Computer Science and Engineering.</h3>
 
 
