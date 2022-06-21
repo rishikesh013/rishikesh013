@@ -82,7 +82,7 @@
 </p>
   <!-- gif for programmers -->
   
-## ❤ Views and Followers
+## Views and Followers ❤
 <div align="center">
 <img src="https://octodex.github.com/images/daftpunktocat-guy.gif" width="290"/>
 </div>
