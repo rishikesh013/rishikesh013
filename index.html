@@ -7,7 +7,7 @@
     <!-- SEO Meta Tags -->
     <title>V Rishikesh - Associate Software Developer</title>
     <meta name="description" content="Personal portfolio of V Rishikesh, an Associate Software Developer specializing in Java, Spring Boot, and scalable backend systems based in Bengaluru.">
-    <meta name="keywords" content="V Rishikesh, Software Developer, Java, Spring Boot, Microservices, Backend Developer, Portfolio, Bengaluru">
+    <meta name="keywords" content="V Rishikesh, Software Developer, Java, Spring Boot, Microservices, Backend Developer, Portfolio, Bengaluru, Incture Technologies, AWS, Azure">
     <meta name="author" content="V Rishikesh">
     <link rel="canonical" href="https://rishikesh013.github.io/">
 
@@ -16,14 +16,14 @@
     <meta property="og:url" content="https://rishikesh013.github.io/">
     <meta property="og:title" content="V Rishikesh - Associate Software Developer">
     <meta property="og:description" content="Personal portfolio showcasing the skills and projects of V Rishikesh, a backend developer specializing in Java and Spring Boot.">
-    <meta property="og:image" content="https://placehold.co/1200x630/0d9488/ffffff?text=V+Rishikesh">
+    <meta property="og:image" content="https://placehold.co/1200x630/000000/a3e635?text=VR">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://rishikesh013.github.io/">
     <meta property="twitter:title" content="V Rishikesh - Associate Software Developer">
     <meta property="twitter:description" content="Personal portfolio showcasing the skills and projects of V Rishikesh, a backend developer specializing in Java and Spring Boot.">
-    <meta property="twitter:image" content="https://placehold.co/1200x630/0d9488/ffffff?text=V+Rishikesh">
+    <meta property="twitter:image" content="https://placehold.co/1200x630/000000/a3e635?text=VR">
 
     <!-- Styling and Fonts -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -33,13 +33,14 @@
     
     <style>
         html { scroll-behavior: smooth; }
-        body { font-family: 'Inter', sans-serif; background-image: linear-gradient(120deg, #f0f9ff 0%, #e0f2fe 100%); }
-        .glass-panel { background: rgba(255, 255, 255, 0.4); -webkit-backdrop-filter: blur(12px); backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.2); }
-        .scroll-reveal { opacity: 0; transform: translateY(30px); transition: opacity 0.6s ease-out, transform 0.6s ease-out; will-change: opacity, transform; }
+        body { font-family: 'Inter', sans-serif; background-color: #f1f5f9; color: #1e293b; }
+        .brutalist-shadow { box-shadow: 8px 8px 0px #000; }
+        .brutalist-shadow-sm { box-shadow: 4px 4px 0px #000; }
+        .brutalist-shadow-hover:hover { box-shadow: 12px 12px 0px #000; }
+        .brutalist-shadow-sm-hover:hover { box-shadow: 6px 6px 0px #000; }
+        .scroll-reveal { opacity: 0; transform: translateY(30px); transition: opacity 0.5s ease-out, transform 0.5s ease-out; will-change: opacity, transform; }
         .scroll-reveal.visible { opacity: 1; transform: translateY(0); }
-        .nav-link.active { color: #0d9488; }
-        .nav-link::after { content: ''; display: block; width: 0; height: 2px; background: #0d9488; transition: width .3s; }
-        .nav-link:hover::after, .nav-link.active::after { width: 100%; }
+        .nav-link.active { color: #65a30d; }
     </style>
 
     <!-- Structured Data -->
@@ -58,7 +59,7 @@
         "@type": "CollegeOrUniversity",
         "name": "SRM Valliammai Engineering College"
       },
-      "knowsAbout": ["Java", "Spring Boot", "Microservices", "Cloud Computing", "DevOps", "Backend Development"],
+      "knowsAbout": ["Java", "Spring Boot", "Microservices", "Cloud Computing", "DevOps", "Backend Development", "RESTful APIs", "Docker", "Kubernetes", "AWS", "Azure"],
       "sameAs": [
         "https://linkedin.com/in/rishikesh13",
         "https://github.com/rishikesh013"
@@ -66,254 +67,289 @@
     }
     </script>
 </head>
-<body class="antialiased text-slate-700">
+<body class="antialiased">
 
     <!-- Header -->
-    <header id="header" class="fixed top-4 left-1/2 -translate-x-1/2 z-50 w-[95%] max-w-5xl glass-panel rounded-xl shadow-lg transition-all duration-300">
-        <div class="container mx-auto px-4 py-3">
-            <nav class="flex justify-between items-center" aria-label="Main navigation">
-                <a href="#hero" class="text-xl font-bold text-slate-800" aria-label="Go to top of the page">Rishikesh</a>
+    <header id="header" class="bg-white/80 backdrop-blur-md sticky top-0 z-50 border-b-4 border-black">
+        <div class="container mx-auto px-4">
+            <nav class="flex justify-between items-center py-4" aria-label="Main navigation">
+                <a href="#hero" class="text-2xl font-black text-black" aria-label="Go to top of the page">Rishikesh.dev</a>
                 <div class="hidden md:flex items-center space-x-8">
-                    <a href="#skills" class="nav-link text-slate-600 font-semibold hover:text-teal-600 transition-colors">Skills</a>
-                    <a href="#experience" class="nav-link text-slate-600 font-semibold hover:text-teal-600 transition-colors">Journey</a>
-                    <a href="#projects" class="nav-link text-slate-600 font-semibold hover:text-teal-600 transition-colors">Projects</a>
-                    <a href="#awards" class="nav-link text-slate-600 font-semibold hover:text-teal-600 transition-colors">Awards</a>
+                    <a href="#skills" class="nav-link text-black font-bold hover:text-lime-500 transition-colors">Skills</a>
+                    <a href="#experience" class="nav-link text-black font-bold hover:text-lime-500 transition-colors">Experience</a>
+                    <a href="#projects" class="nav-link text-black font-bold hover:text-lime-500 transition-colors">Projects</a>
+                    <a href="#awards" class="nav-link text-black font-bold hover:text-lime-500 transition-colors">Awards</a>
                 </div>
-                <a href="#contact" class="hidden md:block bg-teal-600 text-white font-semibold py-2 px-5 rounded-lg shadow-md hover:bg-teal-700 transition-all transform hover:scale-105">
-                    Contact Me
+                <a href="#contact" class="hidden md:block bg-lime-400 text-black font-bold py-3 px-6 rounded-md border-2 border-black brutalist-shadow-sm brutalist-shadow-sm-hover transition-all transform hover:-translate-y-1 hover:-translate-x-1">
+                    Contact
                 </a>
-                <button id="menu-btn" class="md:hidden p-2 text-slate-700" aria-label="Open menu">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                <button id="menu-btn" class="md:hidden p-2 text-black" aria-label="Open menu">
+                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
                 </button>
             </nav>
         </div>
         <!-- Mobile Menu -->
-        <div id="mobile-menu" class="hidden md:hidden">
-            <a href="#skills" class="nav-link block text-center py-3 text-slate-600 font-semibold border-t border-white/20">Skills</a>
-            <a href="#experience" class="nav-link block text-center py-3 text-slate-600 font-semibold border-t border-white/20">Journey</a>
-            <a href="#projects" class="nav-link block text-center py-3 text-slate-600 font-semibold border-t border-white/20">Projects</a>
-            <a href="#awards" class="nav-link block text-center py-3 text-slate-600 font-semibold border-t border-white/20">Awards</a>
-            <a href="#contact" class="nav-link block text-center py-3 text-slate-600 font-semibold border-t border-white/20">Contact Me</a>
+        <div id="mobile-menu" class="hidden md:hidden border-t-4 border-black">
+            <a href="#skills" class="nav-link block text-center py-4 text-black font-bold border-b border-slate-200">Skills</a>
+            <a href="#experience" class="nav-link block text-center py-4 text-black font-bold border-b border-slate-200">Experience</a>
+            <a href="#projects" class="nav-link block text-center py-4 text-black font-bold border-b border-slate-200">Projects</a>
+            <a href="#awards" class="nav-link block text-center py-4 text-black font-bold border-b border-slate-200">Awards</a>
+            <a href="#contact" class="nav-link block text-center py-4 text-black font-bold">Contact</a>
         </div>
     </header>
 
-    <main class="container mx-auto px-4 pt-24">
+    <main class="container mx-auto px-4">
 
         <!-- Hero Section -->
-        <section id="hero" class="text-center min-h-[80vh] flex flex-col items-center justify-center">
-            <h1 class="text-5xl md:text-7xl lg:text-8xl font-black text-slate-900 leading-tight scroll-reveal">
+        <section id="hero" class="text-center min-h-[90vh] flex flex-col items-center justify-center">
+            <h1 class="text-6xl md:text-8xl lg:text-9xl font-black text-black leading-none scroll-reveal">
                 V Rishikesh
             </h1>
-            <p class="mt-4 text-xl md:text-2xl text-teal-600 font-semibold max-w-3xl scroll-reveal" style="transition-delay: 150ms;">
-                Associate Software Developer crafting scalable backend systems with Java & Spring Boot.
+            <p class="mt-4 text-xl md:text-2xl text-slate-700 font-semibold max-w-3xl scroll-reveal" style="transition-delay: 150ms;">
+                Associate Software Developer <span class="text-lime-500">//</span> Specializing in Java, Spring Boot, and Microservices Architecture.
             </p>
-            <p class="mt-6 max-w-2xl text-lg text-slate-600 scroll-reveal" style="transition-delay: 300ms;">
-                I build and deploy robust, high-impact solutions on cloud platforms like Azure and AWS, turning complex challenges into elegant, efficient code.
-            </p>
-            <div class="mt-10 flex flex-wrap justify-center gap-4 scroll-reveal" style="transition-delay: 450ms;">
-                <a href="#projects" class="bg-teal-600 text-white font-semibold py-3 px-6 rounded-lg shadow-md hover:bg-teal-700 transition-transform transform hover:scale-105">View My Work</a>
-                <a href="VRishikesh_Java_Backend.pdf" download="VRishikesh_Resume.pdf" class="bg-white text-slate-700 font-semibold py-3 px-6 rounded-lg shadow-md hover:bg-slate-50 transition-transform transform hover:scale-105 border border-slate-200">Download Resume</a>
+            <div class="mt-10 flex flex-wrap justify-center gap-4 scroll-reveal" style="transition-delay: 300ms;">
+                <a href="#projects" class="bg-lime-400 text-black font-bold py-4 px-8 rounded-md border-2 border-black brutalist-shadow-sm brutalist-shadow-sm-hover transition-all transform hover:-translate-y-1 hover:-translate-x-1">View Projects</a>
+                <a href="VRishikesh_Java_Backend.pdf" download="VRishikesh_Resume.pdf" class="bg-white text-black font-bold py-4 px-8 rounded-md border-2 border-black brutalist-shadow-sm brutalist-shadow-sm-hover transition-all transform hover:-translate-y-1 hover:-translate-x-1">Download CV</a>
             </div>
         </section>
 
-        <!-- Skills Section -->
-        <section id="skills" class="py-16">
+<!-- Skills Section -->
+        <section id="skills" class="py-24">
             <div class="text-center mb-16 scroll-reveal">
-                <h2 class="text-4xl md:text-5xl font-extrabold text-slate-900">Technical Skills</h2>
-                <p class="mt-4 text-lg text-slate-500 max-w-2xl mx-auto">A snapshot of the tools and technologies I use to build robust applications.</p>
+                <h2 class="text-5xl md:text-6xl font-black text-black">Core Competencies</h2>
+                <p class="mt-4 text-lg text-slate-600 max-w-2xl mx-auto">My technical toolkit for building modern, scalable applications.</p>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div class="glass-panel p-8 rounded-2xl shadow-lg scroll-reveal">
-                    <h3 class="text-2xl font-bold text-slate-800 mb-4">Languages</h3>
+                <div class="bg-white p-8 rounded-lg border-2 border-black brutalist-shadow-sm scroll-reveal">
+                    <h3 class="text-2xl font-bold text-black mb-4">Languages</h3>
                     <div class="flex flex-wrap gap-3">
-                        <span class="bg-teal-100 text-teal-800 font-semibold px-4 py-1.5 rounded-full">Java 8+</span>
-                        <span class="bg-slate-100 text-slate-700 font-medium px-4 py-1.5 rounded-full">Python</span>
-                        <span class="bg-slate-100 text-slate-700 font-medium px-4 py-1.5 rounded-full">JavaScript</span>
-                        <span class="bg-slate-100 text-slate-700 font-medium px-4 py-1.5 rounded-full">SQL</span>
+                        <span class="bg-lime-400 text-black font-semibold px-4 py-1.5 rounded-md border-2 border-black">Java 8+</span>
+                        <span class="bg-slate-200 text-black font-medium px-4 py-1.5 rounded-md border-2 border-black">Python</span>
+                        <span class="bg-slate-200 text-black font-medium px-4 py-1.5 rounded-md border-2 border-black">JavaScript</span>
+                        <span class="bg-slate-200 text-black font-medium px-4 py-1.5 rounded-md border-2 border-black">SQL</span>
                     </div>
                 </div>
-                <div class="glass-panel p-8 rounded-2xl shadow-lg scroll-reveal" style="transition-delay: 150ms;">
-                    <h3 class="text-2xl font-bold text-slate-800 mb-4">Frameworks & Libraries</h3>
+                <div class="bg-white p-8 rounded-lg border-2 border-black brutalist-shadow-sm scroll-reveal" style="transition-delay: 150ms;">
+                    <h3 class="text-2xl font-bold text-black mb-4">Frameworks & Libraries</h3>
                     <div class="flex flex-wrap gap-3">
-                        <span class="bg-teal-100 text-teal-800 font-semibold px-4 py-1.5 rounded-full">Spring Boot</span>
-                        <span class="bg-teal-100 text-teal-800 font-semibold px-4 py-1.5 rounded-full">Spring Cloud</span>
-                        <span class="bg-slate-100 text-slate-700 font-medium px-4 py-1.5 rounded-full">JPA</span>
-                        <span class="bg-slate-100 text-slate-700 font-medium px-4 py-1.5 rounded-full">Kafka</span>
-                        <span class="bg-slate-100 text-slate-700 font-medium px-4 py-1.5 rounded-full">Django</span>
+                        <span class="bg-lime-400 text-black font-semibold px-4 py-1.5 rounded-md border-2 border-black">Spring Boot</span>
+                        <span class="bg-lime-400 text-black font-semibold px-4 py-1.5 rounded-md border-2 border-black">Spring Cloud</span>
+                        <span class="bg-slate-200 text-black font-medium px-4 py-1.5 rounded-md border-2 border-black">Kafka</span>
+                        <span class="bg-slate-200 text-black font-medium px-4 py-1.5 rounded-md border-2 border-black">JPA</span>
+                        <span class="bg-slate-200 text-black font-medium px-4 py-1.5 rounded-md border-2 border-black">Django</span>
                     </div>
                 </div>
-                <div class="glass-panel p-8 rounded-2xl shadow-lg scroll-reveal" style="transition-delay: 300ms;">
-                    <h3 class="text-2xl font-bold text-slate-800 mb-4">Cloud, DevOps & DBs</h3>
+                <div class="bg-white p-8 rounded-lg border-2 border-black brutalist-shadow-sm scroll-reveal" style="transition-delay: 300ms;">
+                    <h3 class="text-2xl font-bold text-black mb-4">Cloud, DevOps & DBs</h3>
                     <div class="flex flex-wrap gap-3">
-                        <span class="bg-teal-100 text-teal-800 font-semibold px-4 py-1.5 rounded-full">Azure</span>
-                        <span class="bg-teal-100 text-teal-800 font-semibold px-4 py-1.5 rounded-full">AWS</span>
-                        <span class="bg-teal-100 text-teal-800 font-semibold px-4 py-1.5 rounded-full">MySQL</span>
-                        <span class="bg-slate-100 text-slate-700 font-medium px-4 py-1.5 rounded-full">Docker</span>
-                        <span class="bg-slate-100 text-slate-700 font-medium px-4 py-1.5 rounded-full">Kubernetes</span>
-                        <span class="bg-slate-100 text-slate-700 font-medium px-4 py-1.5 rounded-full">Git</span>
+                        <span class="bg-lime-400 text-black font-semibold px-4 py-1.5 rounded-md border-2 border-black">Azure</span>
+                        <span class="bg-lime-400 text-black font-semibold px-4 py-1.5 rounded-md border-2 border-black">SAP BTP</span>
+                        <span class="bg-lime-400 text-black font-semibold px-4 py-1.5 rounded-md border-2 border-black">MySQL</span>
+                        <span class="bg-slate-200 text-black font-medium px-4 py-1.5 rounded-md border-2 border-black">Docker</span>
+                        <span class="bg-slate-200 text-black font-medium px-4 py-1.5 rounded-md border-2 border-black">Kubernetes</span>
                     </div>
                 </div>
-                 <div class="glass-panel p-8 rounded-2xl shadow-lg scroll-reveal" style="transition-delay: 450ms;">
-                    <h3 class="text-2xl font-bold text-slate-800 mb-4">API & Integration</h3>
+                <div class="bg-white p-8 rounded-lg border-2 border-black brutalist-shadow-sm scroll-reveal" style="transition-delay: 450ms;">
+                    <h3 class="text-2xl font-bold text-black mb-4">API & Integration</h3>
                     <div class="flex flex-wrap gap-3">
-                        <span class="bg-teal-100 text-teal-800 font-semibold px-4 py-1.5 rounded-full">RESTful APIs</span>
-                        <span class="bg-slate-100 text-slate-700 font-medium px-4 py-1.5 rounded-full">Swagger/OpenAPI</span>
-                        <span class="bg-slate-100 text-slate-700 font-medium px-4 py-1.5 rounded-full">JSON</span>
-                        <span class="bg-slate-100 text-slate-700 font-medium px-4 py-1.5 rounded-full">XML</span>
+                        <span class="bg-lime-400 text-black font-semibold px-4 py-1.5 rounded-md border-2 border-black">RESTful APIs</span>
+                        <span class="bg-slate-200 text-black font-medium px-4 py-1.5 rounded-md border-2 border-black">Swagger/OpenAPI</span>
+                        <span class="bg-slate-200 text-black font-medium px-4 py-1.5 rounded-md border-2 border-black">JSON</span>
                     </div>
                 </div>
-                <div class="glass-panel p-8 rounded-2xl shadow-lg scroll-reveal" style="transition-delay: 600ms;">
-                    <h3 class="text-2xl font-bold text-slate-800 mb-4">Testing & QA</h3>
+                <div class="bg-white p-8 rounded-lg border-2 border-black brutalist-shadow-sm scroll-reveal" style="transition-delay: 600ms;">
+                    <h3 class="text-2xl font-bold text-black mb-4">Testing & QA</h3>
                     <div class="flex flex-wrap gap-3">
-                        <span class="bg-teal-100 text-teal-800 font-semibold px-4 py-1.5 rounded-full">JUnit</span>
-                        <span class="bg-teal-100 text-teal-800 font-semibold px-4 py-1.5 rounded-full">Mockito</span>
-                        <span class="bg-slate-100 text-slate-700 font-medium px-4 py-1.5 rounded-full">JMeter</span>
+                        <span class="bg-lime-400 text-black font-semibold px-4 py-1.5 rounded-md border-2 border-black">JUnit</span>
+                        <span class="bg-lime-400 text-black font-semibold px-4 py-1.5 rounded-md border-2 border-black">Mockito</span>
+                        <span class="bg-slate-200 text-black font-medium px-4 py-1.5 rounded-md border-2 border-black">JMeter</span>
+                    </div>
+                </div>
+                <div class="bg-white p-8 rounded-lg border-2 border-black brutalist-shadow-sm scroll-reveal" style="transition-delay: 750ms;">
+                    <h3 class="text-2xl font-bold text-black mb-4">Methodologies</h3>
+                    <div class="flex flex-wrap gap-3">
+                        <span class="bg-lime-400 text-black font-semibold px-4 py-1.5 rounded-md border-2 border-black">Agile (Scrum)</span>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Experience & Education Section -->
-        <section id="experience" class="py-16">
+<!-- Experience & Education Section
+        <section id="experience" class="py-24">
             <div class="text-center mb-16 scroll-reveal">
-                <h2 class="text-4xl md:text-5xl font-extrabold text-slate-900">Experience & Education</h2>
-                <p class="mt-4 text-lg text-slate-500 max-w-2xl mx-auto">My professional and academic journey, highlighting key roles and accomplishments.</p>
+                <h2 class="text-5xl md:text-6xl font-black text-black">Experience & Education</h2>
+                <p class="mt-4 text-lg text-slate-600 max-w-2xl mx-auto">My professional and academic journey, highlighting key roles and accomplishments.</p>
+            </div>
+            <div class="max-w-3xl mx-auto space-y-12">
+                <div class="scroll-reveal">
+                    <div class="bg-white p-8 rounded-lg border-2 border-black brutalist-shadow">
+                        <p class="text-slate-600 font-semibold">Jul 2023 – Present</p>
+                        <h3 class="text-3xl font-bold text-black mt-2">Associate Software Developer</h3>
+                        <p class="text-xl font-semibold text-slate-700">Incture Technologies</p>
+                        <ul class="mt-4 list-disc list-outside ml-5 space-y-2 text-slate-700">
+                            <li>Played a pivotal role in developing the Intelligent Work Management microservice by implementing key technologies essential for the central task management system.</li>
+                            <li>Contributed to multiple customer projects by designing tailored solutions and managing the successful deployment of the Intelligent Work Management system.</li>
+                            <li>Optimized the codebase for seamless cross-platform deployment, ensuring full compatibility with both Azure and SAP BTP platforms.</li>
+                        </ul>
+                    </div>
+                </div>
+                 <div class="scroll-reveal" style="transition-delay: 150ms;">
+                    <div class="bg-white p-8 rounded-lg border-2 border-black brutalist-shadow">
+                        <p class="text-slate-600 font-semibold">Jan 2023 – Jul 2023</p>
+                        <h3 class="text-3xl font-bold text-black mt-2">Academic Intern</h3>
+                        <p class="text-xl font-semibold text-slate-700">Incture Technologies</p>
+                         <ul class="mt-4 list-disc list-outside ml-5 space-y-2 text-slate-700">
+                            <li>Upgraded core backend services from Spring 2.6 to Spring 3.4, refactoring deprecated code and enhancing security, improving system maintainability and reliability.</li>
+                            <li>Improved application performance by tuning database queries (MySQL) and implementing Hibernate caching, reducing response times and resource utilization.</li>
+                            <li>Assisted in maintaining Docker and Kubernetes configurations for existing CI/CD pipelines, supporting deployments to SAP BTP and Azure.</li>
+                        </ul>
+                    </div>
+                </div>
+                 <div class="scroll-reveal" style="transition-delay: 300ms;">
+                    <div class="bg-white p-8 rounded-lg border-2 border-black brutalist-shadow">
+                        <p class="text-slate-600 font-semibold">2019 – 2023</p>
+                        <h3 class="text-3xl font-bold text-black mt-2">Bachelor of Engineering, CSE</h3>
+                        <p class="text-xl font-semibold text-slate-700">SRM Valliammai Engineering College</p>
+                        <p class="mt-4 text-slate-700">Graduated with a CGPA of 8.76, focusing on computer science fundamentals, data structures, and algorithms.</p>
+                    </div>
+                </div>
+            </div>
+        </section>      -->
+
+        <!-- Experience & Education Section -->
+        <section id="experience" class="py-24">
+            <div class="text-center mb-16 scroll-reveal">
+                <h2 class="text-5xl md:text-6xl font-black text-black">Experience & Education</h2>
+                <p class="mt-4 text-lg text-slate-600 max-w-2xl mx-auto">My professional and academic journey, highlighting key roles and accomplishments.</p>
             </div>
             <div class="relative max-w-3xl mx-auto">
-                <div class="absolute left-4 md:left-1/2 -ml-px w-0.5 h-full bg-slate-300"></div>
+                <div class="absolute left-4 -ml-px w-1 h-full bg-black md:left-1/2"></div>
                 <!-- Associate Developer -->
                 <div class="relative scroll-reveal pl-12 md:pl-0">
-                    <div class="md:flex items-center md:flex-row-reverse">
+                    <div class="md:flex items-start md:flex-row-reverse">
                         <div class="md:w-1/2 md:pl-8">
-                            <p class="text-teal-600 font-semibold">Jul 2023 – Present</p>
-                            <div class="glass-panel p-6 rounded-xl shadow-lg mt-2">
-                                <h3 class="text-xl font-bold text-slate-800">Associate Software Developer</h3>
-                                <p class="font-semibold text-slate-600">Incture Technologies</p>
-                                <ul class="mt-3 list-disc list-outside ml-5 space-y-1 text-slate-600">
-                                    <li>Played a pivotal role in developing the Intelligent Work Management microservice.</li>
-                                    <li>Contributed to multiple customer projects by designing tailored solutions.</li>
-                                    <li>Optimized codebase for cross-platform deployment on Azure and SAP BTP.</li>
-                                    <li>Mentored interns, delivering product knowledge and best practices.</li>
+                             <div class="bg-white p-8 rounded-lg border-2 border-black brutalist-shadow">
+                                <p class="text-slate-600 font-semibold">Jul 2023 – Present</p>
+                                <h3 class="text-3xl font-bold text-black mt-2">Associate Software Developer</h3>
+                                <p class="text-xl font-semibold text-slate-700">Incture Technologies</p>
+                                <ul class="mt-4 list-disc list-outside ml-5 space-y-2 text-slate-700">
+                                    <li>Developed a key microservice for a central task management system.</li>
+                                    <li>Designed and deployed tailored solutions for multiple customer projects.</li>
+                                    <li>Optimized code for cross-platform deployment on Azure and SAP BTP.</li>
                                 </ul>
                             </div>
                         </div>
-                        <div class="w-8 h-8 rounded-full bg-teal-600 border-4 border-white absolute left-4 -translate-x-1/2 top-0 md:left-1/2 md:-translate-x-1/2"></div>
+                        <div class="w-8 h-8 rounded-full bg-lime-400 border-4 border-black absolute left-4 -translate-x-1/2 top-4 md:left-1/2 md:-translate-x-1/2"></div>
                         <div class="md:w-1/2"></div>
                     </div>
                 </div>
                 <!-- Intern -->
                 <div class="relative mt-12 scroll-reveal pl-12 md:pl-0">
-                     <div class="md:flex items-center">
+                     <div class="md:flex items-start">
                         <div class="md:w-1/2 md:pr-8">
-                             <p class="text-teal-600 font-semibold md:text-right">Jan 2023 – Jul 2023</p>
-                             <div class="glass-panel p-6 rounded-xl shadow-lg mt-2">
-                                <h3 class="text-xl font-bold text-slate-800">Academic Intern</h3>
-                                <p class="font-semibold text-slate-600">Incture Technologies</p>
-                                <ul class="mt-3 list-disc list-outside ml-5 space-y-1 text-slate-600">
-                                    <li>Upgraded core backend services from Spring 2.6 to Spring 3.4.</li>
-                                    <li>Reduced API latency by 25% via query optimization.</li>
-                                    <li>Maintained Docker/Kubernetes configurations for CI/CD pipelines.</li>
-                                    <li>Contributed to multiple proof-of-concept initiatives.</li>
+                             <div class="bg-white p-8 rounded-lg border-2 border-black brutalist-shadow md:text-right">
+                                <p class="text-slate-600 font-semibold">Jan 2023 – Jul 2023</p>
+                                <h3 class="text-3xl font-bold text-black mt-2">Academic Intern</h3>
+                                <p class="text-xl font-semibold text-slate-700">Incture Technologies</p>
+                                 <ul class="mt-4 list-disc list-outside ml-5 space-y-2 text-slate-700 text-left">
+                                    <li>Upgraded backend services to Spring 3.4, enhancing security and refactoring code.</li>
+                                    <li>Improved application performance by tuning database queries and implementing caching.</li>
+                                    <li>Maintained Docker and Kubernetes configurations for CI/CD pipelines.</li>
                                 </ul>
                             </div>
                         </div>
-                        <div class="w-8 h-8 rounded-full bg-teal-600 border-4 border-white absolute left-4 -translate-x-1/2 top-0 md:left-1/2 md:-translate-x-1/2"></div>
+                        <div class="w-8 h-8 rounded-full bg-lime-400 border-4 border-black absolute left-4 -translate-x-1/2 top-4 md:left-1/2 md:-translate-x-1/2"></div>
                         <div class="md:w-1/2"></div>
                     </div>
                 </div>
                 <!-- Education -->
                  <div class="relative mt-12 scroll-reveal pl-12 md:pl-0">
-                    <div class="md:flex items-center md:flex-row-reverse">
+                    <div class="md:flex items-start md:flex-row-reverse">
                         <div class="md:w-1/2 md:pl-8">
-                            <p class="text-teal-600 font-semibold">2019 – 2023</p>
-                            <div class="glass-panel p-6 rounded-xl shadow-lg mt-2">
-                                <h3 class="text-xl font-bold text-slate-800">Bachelor of Engineering, CSE</h3>
-                                <p class="font-semibold text-slate-600">SRM Valliammai Engineering College</p>
-                                <p class="mt-3 text-slate-600">Graduated with a CGPA of 8.76, focusing on computer science fundamentals, data structures, and algorithms.</p>
+                            <div class="bg-white p-8 rounded-lg border-2 border-black brutalist-shadow">
+                                <p class="text-slate-600 font-semibold">2019 – 2023</p>
+                                <h3 class="text-3xl font-bold text-black mt-2">Bachelor of Engineering, CSE</h3>
+                                <p class="text-xl font-semibold text-slate-700">SRM Valliammai Engineering College</p>
+                                <p class="mt-4 text-slate-700">Graduated with a CGPA of 8.76, focusing on computer science fundamentals, data structures, and algorithms.</p>
                             </div>
                         </div>
-                        <div class="w-8 h-8 rounded-full bg-teal-600 border-4 border-white absolute left-4 -translate-x-1/2 top-0 md:left-1/2 md:-translate-x-1/2"></div>
+                        <div class="w-8 h-8 rounded-full bg-lime-400 border-4 border-black absolute left-4 -translate-x-1/2 top-4 md:left-1/2 md:-translate-x-1/2"></div>
                         <div class="md:w-1/2"></div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Projects Section -->
-        <section id="projects" class="py-16">
+	         <!-- Projects Section -->
+        <section id="projects" class="py-24">
             <div class="text-center mb-16 scroll-reveal">
-                <h2 class="text-4xl md:text-5xl font-extrabold text-slate-900">Featured Projects</h2>
-                <p class="mt-4 text-lg text-slate-500 max-w-2xl mx-auto">A selection of projects that showcase my ability to deliver value and impact.</p>
+                <h2 class="text-5xl md:text-6xl font-black text-black">Featured Projects</h2>
+                <p class="mt-4 text-lg text-slate-600 max-w-2xl mx-auto">A selection of projects that showcase my ability to deliver value and impact.</p>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div class="glass-panel p-8 rounded-2xl shadow-lg transition-transform transform hover:-translate-y-2 scroll-reveal flex flex-col">
-                    <h3 class="text-2xl font-bold text-slate-800">Intake Management (J&J)</h3>
-                    <p class="text-slate-500 mt-2 mb-4 flex-grow">Developed a custom microservice with low-code workflows using Flowable to meet unique client business logic, enhancing system functionality.</p>
-                    <div class="border-t border-white/30 pt-4 mt-auto">
-                        <p class="text-4xl font-extrabold text-teal-600">-40%</p>
-                        <p class="text-slate-600 font-semibold">Time-to-Market for New Features</p>
+                <div class="bg-white p-8 rounded-lg border-2 border-black brutalist-shadow transition-all transform hover:-translate-y-2 hover:-translate-x-2 brutalist-shadow-hover scroll-reveal flex flex-col text-left">
+                    <div class="flex-grow">
+                        <h3 class="text-3xl font-black text-black">Intake Management (J&J)</h3>
+                        <p class="text-slate-600 mt-2 mb-4">Developed a custom microservice with low-code workflows to meet unique client business logic.</p>
                     </div>
+                    <p class="text-2xl font-black text-lime-500 mt-6">-40% Time-to-Market</p>
                 </div>
-                <div class="glass-panel p-8 rounded-2xl shadow-lg transition-transform transform hover:-translate-y-2 scroll-reveal flex flex-col" style="transition-delay: 150ms;">
-                    <h3 class="text-2xl font-bold text-slate-800">Intelligent Work Management</h3>
-                    <p class="text-slate-500 mt-2 mb-4 flex-grow">Led the migration of a monolith to a microservices architecture, designing and implementing RESTful APIs and integrating a robust messaging service.</p>
-                    <div class="border-t border-white/30 pt-4 mt-auto">
-                        <p class="text-4xl font-extrabold text-teal-600">+50%</p>
-                        <p class="text-slate-600 font-semibold">Increase in Deployment Frequency</p>
+                <a href="https://cherrywork.com/intelligent-work-management" target="_blank" rel="noopener noreferrer" class="block bg-white p-8 rounded-lg border-2 border-black brutalist-shadow transition-all transform hover:-translate-y-2 hover:-translate-x-2 brutalist-shadow-hover scroll-reveal flex flex-col text-left" style="transition-delay: 150ms;">
+                    <div class="flex-grow">
+                        <h3 class="text-3xl font-black text-black">Intelligent Work Management</h3>
+                        <p class="text-slate-600 mt-2 mb-4">Led the migration of a monolith to a microservices architecture, improving scalability.</p>
                     </div>
-                </div>
-                <div class="glass-panel p-8 rounded-2xl shadow-lg transition-transform transform hover:-translate-y-2 scroll-reveal flex flex-col" style="transition-delay: 300ms;">
-                    <h3 class="text-2xl font-bold text-slate-800">Full-Stack Personal Portfolio</h3>
-                    <p class="text-slate-500 mt-2 mb-4 flex-grow">Created a comprehensive personal website from scratch, utilizing Django for the backend and JavaScript for a fully responsive frontend experience.</p>
-                    <div class="border-t border-white/30 pt-4 mt-auto">
-                        <p class="text-4xl font-extrabold text-teal-600">AWS</p>
-                        <p class="text-slate-600 font-semibold">Deployed on EC2 Instance</p>
+                    <p class="text-2xl font-black text-lime-500 mt-6">+50% Deployment Frequency</p>
+                </a>
+                <div class="bg-white p-8 rounded-lg border-2 border-black brutalist-shadow transition-all transform hover:-translate-y-2 hover:-translate-x-2 brutalist-shadow-hover scroll-reveal flex flex-col text-left" style="transition-delay: 300ms;">
+                    <div class="flex-grow">
+                        <h3 class="text-3xl font-black text-black">Full-Stack Personal Portfolio</h3>
+                        <p class="text-slate-600 mt-2 mb-4">Created a comprehensive personal website from scratch, utilizing Django for the backend and JavaScript for a fully responsive frontend experience.</p>
                     </div>
+                    <p class="text-2xl font-black text-lime-500 mt-6">AWS Deployed</p>
                 </div>
             </div>
         </section>
-
-        <!-- Awards Section -->
-        <section id="awards" class="py-16">
+        
+		 <!-- Awards Section -->
+        <section id="awards" class="py-24">
             <div class="text-center mb-16 scroll-reveal">
-                <h2 class="text-4xl md:text-5xl font-extrabold text-slate-900">Awards & Recognition</h2>
-                <p class="mt-4 text-lg text-slate-500 max-w-2xl mx-auto">Recognition for my contributions and commitment to excellence.</p>
+                <h2 class="text-5xl md:text-6xl font-black text-black">Awards & Recognition</h2>
+                <p class="mt-4 text-lg text-slate-600 max-w-2xl mx-auto">Recognition for my contributions and commitment to excellence.</p>
             </div>
-            <div class="max-w-3xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
-                <div class="glass-panel p-8 rounded-2xl shadow-lg text-center scroll-reveal">
-                    <h3 class="text-2xl font-bold text-slate-800">Innovator of the Quarter</h3>
-                    <p class="text-slate-500 mt-1">Q3 2024-2025</p>
-                    <p class="font-semibold text-teal-600 mt-2">Incture Technologies</p>
-                </div>
-                <div class="glass-panel p-8 rounded-2xl shadow-lg text-center scroll-reveal" style="transition-delay: 150ms;">
-                    <h3 class="text-2xl font-bold text-slate-800">Rising Star of Incture</h3>
-                    <p class="text-slate-500 mt-1">Q3 2023-2024</p>
-                    <p class="font-semibold text-teal-600 mt-2">Incture Technologies</p>
+             <div class="max-w-3xl mx-auto">
+                <div class="bg-white p-8 rounded-lg border-2 border-black brutalist-shadow">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div class="scroll-reveal">
+                            <p class="text-slate-600 font-semibold">Q3 2024-2025</p>
+                            <h3 class="text-3xl font-bold text-black mt-2">Innovator of the Quarter</h3>
+                            <p class="text-xl font-semibold text-slate-700">Incture Technologies</p>
+                        </div>
+                        <div class="scroll-reveal md:border-l-2 border-black md:pl-8 border-t-2 md:border-t-0 border-black pt-8 md:pt-0 mt-8 md:mt-0" style="transition-delay: 150ms;">
+                            <p class="text-slate-600 font-semibold">Q3 2023-2024</p>
+                            <h3 class="text-3xl font-bold text-black mt-2">Rising Star of Incture</h3>
+                            <p class="text-xl font-semibold text-slate-700">Incture Technologies</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
 
         <!-- Contact Section -->
-        <section id="contact" class="py-16 text-center">
-             <div class="glass-panel p-10 md:p-16 rounded-3xl max-w-4xl mx-auto scroll-reveal">
-                <h2 class="text-4xl md:text-5xl font-extrabold text-slate-900">Let's Connect</h2>
-                <p class="mt-4 text-lg text-slate-600 max-w-xl mx-auto">I'm currently open to new opportunities. Feel free to reach out if you think my skills are a good fit for your team.</p>
-                <div class="mt-10 flex justify-center items-center flex-wrap gap-6">
-                    <a href="mailto:rishikesh1113@gmail.com" class="flex items-center gap-2 text-slate-700 font-semibold hover:text-teal-600 transition-colors">
-                        <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path d="M3 4a2 2 0 00-2 2v1.161l8.441 4.221a1.25 1.25 0 001.118 0L19 7.162V6a2 2 0 00-2-2H3z" /><path d="M19 8.839l-7.77 3.885a2.75 2.75 0 01-2.46 0L1 8.839V14a2 2 0 002 2h14a2 2 0 002-2V8.839z" /></svg>
-                        <span>Email</span>
+        <section id="contact" class="py-24">
+             <div class="bg-white p-10 md:p-16 rounded-lg border-2 border-black brutalist-shadow text-center scroll-reveal">
+                <h2 class="text-5xl md:text-6xl font-black text-black">Let's <span class="text-lime-500">Connect</span></h2>
+                <p class="mt-4 text-lg text-slate-700 max-w-xl mx-auto">I'm currently open to new opportunities. Feel free to reach out if you think my skills are a good fit for your team.</p>
+                <div class="mt-12 grid grid-cols-1 sm:grid-cols-3 gap-8">
+                    <a href="mailto:rishikesh1113@gmail.com" class="bg-white text-black font-bold py-6 px-4 rounded-md border-2 border-black brutalist-shadow-sm hover:bg-lime-400 transition-all transform hover:-translate-y-1 hover:-translate-x-1 brutalist-shadow-sm-hover">
+                        Email
                     </a>
-                    <a href="tel:+919791055510" class="flex items-center gap-2 text-slate-700 font-semibold hover:text-teal-600 transition-colors">
-                        <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M2 3.5A1.5 1.5 0 013.5 2h1.148a1.5 1.5 0 011.465 1.175l.716 3.223a1.5 1.5 0 01-1.052 1.767l-.933.267c-.41.117-.643.555-.48.95a11.542 11.542 0 006.254 6.254c.395.163.833-.07.95-.48l.267-.933a1.5 1.5 0 011.767-1.052l3.223.716A1.5 1.5 0 0118 15.352V16.5a1.5 1.5 0 01-1.5 1.5h-1.5A13.5 13.5 0 012 3.5z" clip-rule="evenodd" /></svg>
-                        <span>Phone</span>
+                    <a href="https://linkedin.com/in/rishikesh13" target="_blank" rel="noopener noreferrer" class="bg-white text-black font-bold py-6 px-4 rounded-md border-2 border-black brutalist-shadow-sm hover:bg-lime-400 transition-all transform hover:-translate-y-1 hover:-translate-x-1 brutalist-shadow-sm-hover">
+                        LinkedIn
                     </a>
-                    <a href="https://linkedin.com/in/rishikesh13" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 text-slate-700 font-semibold hover:text-teal-600 transition-colors">
-                        <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.338 16.338H13.67V12.16c0-.995-.017-2.277-1.387-2.277-1.39 0-1.601 1.086-1.601 2.206v4.248H8.014V8h2.557v1.174h.037c.356-.675 1.227-1.387 2.526-1.387 2.703 0 3.203 1.778 3.203 4.092v4.71zM5.368 7.119a1.724 1.724 0 100-3.448 1.724 1.724 0 000 3.448zM6.701 8H4.036v8.338H6.701V8zM17.668 1H2.328C1.595 1 1 1.581 1 2.298v15.403C1 18.418 1.595 19 2.328 19h15.34c.734 0 1.332-.582 1.332-1.299V2.298C19 1.581 18.402 1 17.668 1z" clip-rule="evenodd" /></svg>
-                        <span>LinkedIn</span>
-                    </a>
-                     <a href="https://github.com/rishikesh013" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 text-slate-700 font-semibold hover:text-teal-600 transition-colors">
-                        <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 0C4.477 0 0 4.477 0 10c0 4.418 2.865 8.165 6.839 9.49.5.092.682-.217.682-.482 0-.237-.009-.868-.014-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.031-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0110 4.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.203 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.338 4.695-4.566 4.942.359.308.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.003 10.003 0 0020 10c0-5.523-4.477-10-10-10z" clip-rule="evenodd" /></svg>
-                        <span>GitHub</span>
+                    <a href="https://github.com/rishikesh013" target="_blank" rel="noopener noreferrer" class="bg-white text-black font-bold py-6 px-4 rounded-md border-2 border-black brutalist-shadow-sm hover:bg-lime-400 transition-all transform hover:-translate-y-1 hover:-translate-x-1 brutalist-shadow-sm-hover">
+                        GitHub
                     </a>
                 </div>
             </div>
