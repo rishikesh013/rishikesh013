@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <!-- SEO Meta Tags -->
     <title>V Rishikesh - Associate Software Developer</title>
-    <meta name="description" content="Personal portfolio of V Rishikesh, an Associate Software Developer specializing in Java, Spring Boot, and scalable backend systems based in Bengaluru.">
-    <meta name="keywords" content="V Rishikesh, Software Developer, Java, Spring Boot, Microservices, Backend Developer, Portfolio, Bengaluru, Incture Technologies, AWS, Azure">
+    <meta name="description"
+        content="Personal portfolio of V Rishikesh, an Associate Software Developer specializing in Java, Spring Boot, and scalable backend systems based in Bengaluru.">
+    <meta name="keywords"
+        content="V Rishikesh, Software Developer, Java, Spring Boot, Microservices, Backend Developer, Portfolio, Bengaluru, Incture Technologies, AWS, Azure">
     <meta name="author" content="V Rishikesh">
     <link rel="canonical" href="https://www.linkedin.com/in/rishikesh13/">
     <link rel="icon" type="image/png" href="./favicon.png">
@@ -16,32 +19,125 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://rishikesh013.github.io/">
     <meta property="og:title" content="V Rishikesh - Associate Software Developer">
-    <meta property="og:description" content="Personal portfolio showcasing the skills and projects of V Rishikesh, a backend developer specializing in Java and Spring Boot.">
+    <meta property="og:description"
+        content="Personal portfolio showcasing the skills and projects of V Rishikesh, a backend developer specializing in Java and Spring Boot.">
     <meta property="og:image" content="https://placehold.co/1200x630/000000/a3e635?text=VR">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://rishikesh013.github.io/">
     <meta property="twitter:title" content="V Rishikesh - Associate Software Developer">
-    <meta property="twitter:description" content="Personal portfolio showcasing the skills and projects of V Rishikesh, a backend developer specializing in Java and Spring Boot.">
+    <meta property="twitter:description"
+        content="Personal portfolio showcasing the skills and projects of V Rishikesh, a backend developer specializing in Java and Spring Boot.">
     <meta property="twitter:image" content="https://placehold.co/1200x630/000000/a3e635?text=VR">
 
     <!-- Styling and Fonts -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
     <style>
-        html { scroll-behavior: smooth; }
-        body { font-family: 'Inter', sans-serif; background-color: #f1f5f9; color: #1e293b; }
-        .brutalist-shadow { box-shadow: 8px 8px 0px #000; }
-        .brutalist-shadow-sm { box-shadow: 4px 4px 0px #000; }
-        .brutalist-shadow-hover:hover { box-shadow: 12px 12px 0px #000; }
-        .brutalist-shadow-sm-hover:hover { box-shadow: 6px 6px 0px #000; }
-        .scroll-reveal { opacity: 0; transform: translateY(30px); transition: opacity 0.5s ease-out, transform 0.5s ease-out; will-change: opacity, transform; }
-        .scroll-reveal.visible { opacity: 1; transform: translateY(0); }
-        .nav-link.active { color: #65a30d; }
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f1f5f9;
+            color: #1e293b;
+        }
+
+        .brutalist-shadow {
+            box-shadow: 8px 8px 0px #000;
+        }
+
+        .brutalist-shadow-sm {
+            box-shadow: 4px 4px 0px #000;
+        }
+
+        .brutalist-shadow-hover:hover {
+            box-shadow: 12px 12px 0px #000;
+        }
+
+        .brutalist-shadow-sm-hover:hover {
+            box-shadow: 6px 6px 0px #000;
+        }
+
+        .scroll-reveal {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+            will-change: opacity, transform;
+        }
+
+        .scroll-reveal.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .nav-link.active {
+            color: #65a30d;
+        }
+
+        /* Add this to your existing <style> block */
+        body {
+            cursor: none;
+        }
+
+        a,
+        button {
+            cursor: none;
+        }
+
+        #custom-cursor {
+            position: fixed;
+            width: 12px;
+            height: 12px;
+            background-color: black;
+            border-radius: 50%;
+            pointer-events: none;
+            transform: translate(-50%, -50%);
+            transition: all 0.2s ease-out;
+            z-index: 9999;
+        }
+
+        #custom-cursor.hover {
+            width: 32px;
+            height: 32px;
+            background-color: transparent;
+            border: 2px solid #a3e635;
+        }
+
+        .typing-cursor {
+            display: inline-block;
+            width: 12px;
+            height: 4.5rem;
+            /* Adjusted for large font */
+            background-color: #a3e635;
+            /* Lime accent color */
+            animation: blink 1s infinite;
+            margin-left: 8px;
+        }
+
+        @media (min-width: 768px) {
+            .typing-cursor {
+                height: 6rem;
+            }
+        }
+
+        @keyframes blink {
+
+            0%,
+            100% {
+                opacity: 1;
+            }
+
+            50% {
+                opacity: 0;
+            }
+        }
     </style>
 
     <!-- Structured Data -->
@@ -68,33 +164,48 @@
     }
     </script>
 </head>
+
 <body class="antialiased">
+    <div id="custom-cursor"></div>
 
     <!-- Header -->
     <header id="header" class="bg-white/80 backdrop-blur-md sticky top-0 z-50 border-b-4 border-black">
         <div class="container mx-auto px-4">
             <nav class="flex justify-between items-center py-4" aria-label="Main navigation">
-                <a href="#hero" class="text-2xl font-black text-black" aria-label="Go to top of the page">Rishikeshv.xyz</a>
+                <a href="#hero" class="text-2xl font-black text-black"
+                    aria-label="Go to top of the page">Rishikeshv.xyz</a>
                 <div class="hidden md:flex items-center space-x-8">
-                    <a href="#skills" class="nav-link text-black font-bold hover:text-lime-500 transition-colors">Skills</a>
-                    <a href="#experience" class="nav-link text-black font-bold hover:text-lime-500 transition-colors">Experience</a>
-                    <a href="#projects" class="nav-link text-black font-bold hover:text-lime-500 transition-colors">Projects</a>
-                    <a href="#awards" class="nav-link text-black font-bold hover:text-lime-500 transition-colors">Awards</a>
+                    <a href="#skills"
+                        class="nav-link text-black font-bold hover:text-lime-500 transition-colors">Skills</a>
+                    <a href="#experience"
+                        class="nav-link text-black font-bold hover:text-lime-500 transition-colors">Experience</a>
+                    <a href="#projects"
+                        class="nav-link text-black font-bold hover:text-lime-500 transition-colors">Projects</a>
+                    <a href="#awards"
+                        class="nav-link text-black font-bold hover:text-lime-500 transition-colors">Awards</a>
                 </div>
-                <a href="#contact" class="hidden md:block bg-lime-400 text-black font-bold py-3 px-6 rounded-md border-2 border-black brutalist-shadow-sm brutalist-shadow-sm-hover transition-all transform hover:-translate-y-1 hover:-translate-x-1">
+                <a href="#contact"
+                    class="hidden md:block bg-lime-400 text-black font-bold py-3 px-6 rounded-md border-2 border-black brutalist-shadow-sm brutalist-shadow-sm-hover transition-all transform hover:-translate-y-1 hover:-translate-x-1">
                     Contact
                 </a>
                 <button id="menu-btn" class="md:hidden p-2 text-black" aria-label="Open menu">
-                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
+                            d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
                 </button>
             </nav>
         </div>
         <!-- Mobile Menu -->
         <div id="mobile-menu" class="hidden md:hidden border-t-4 border-black">
-            <a href="#skills" class="nav-link block text-center py-4 text-black font-bold border-b border-slate-200">Skills</a>
-            <a href="#experience" class="nav-link block text-center py-4 text-black font-bold border-b border-slate-200">Experience</a>
-            <a href="#projects" class="nav-link block text-center py-4 text-black font-bold border-b border-slate-200">Projects</a>
-            <a href="#awards" class="nav-link block text-center py-4 text-black font-bold border-b border-slate-200">Awards</a>
+            <a href="#skills"
+                class="nav-link block text-center py-4 text-black font-bold border-b border-slate-200">Skills</a>
+            <a href="#experience"
+                class="nav-link block text-center py-4 text-black font-bold border-b border-slate-200">Experience</a>
+            <a href="#projects"
+                class="nav-link block text-center py-4 text-black font-bold border-b border-slate-200">Projects</a>
+            <a href="#awards"
+                class="nav-link block text-center py-4 text-black font-bold border-b border-slate-200">Awards</a>
             <a href="#contact" class="nav-link block text-center py-4 text-black font-bold">Contact</a>
         </div>
     </header>
@@ -103,126 +214,128 @@
 
         <!-- Hero Section -->
         <section id="hero" class="text-center min-h-[90vh] flex flex-col items-center justify-center">
-            <h1 class="text-6xl md:text-8xl lg:text-9xl font-black text-black leading-none scroll-reveal">
+            <!-- <h1 class="text-6xl md:text-8xl lg:text-9xl font-black text-black leading-none scroll-reveal">
                 V Rishikesh
+            </h1> -->
+
+            <h1 class="text-6xl md:text-8xl lg:text-9xl font-black text-black leading-none scroll-reveal">
+                <span id="typing-text"></span><span class="typing-cursor"></span>
             </h1>
-            <p class="mt-4 text-xl md:text-2xl text-slate-700 font-semibold max-w-3xl scroll-reveal" style="transition-delay: 150ms;">
-                Associate Software Developer <span class="text-lime-500">//</span> Specializing in Java, Spring Boot, and Microservices Architecture.
+            <p class="mt-4 text-xl md:text-2xl text-slate-700 font-semibold max-w-3xl scroll-reveal"
+                style="transition-delay: 150ms;">
+                Associate Software Developer <span class="text-lime-500">//</span> Specializing in Java, Spring Boot,
+                and Microservices Architecture.
             </p>
             <div class="mt-10 flex flex-wrap justify-center gap-4 scroll-reveal" style="transition-delay: 300ms;">
-                <a href="#projects" class="bg-lime-400 text-black font-bold py-4 px-8 rounded-md border-2 border-black brutalist-shadow-sm brutalist-shadow-sm-hover transition-all transform hover:-translate-y-1 hover:-translate-x-1">View Projects</a>
-                <a href="VRishikesh_Java_Backend.pdf" download="VRishikesh_Java_Backend.pdf" class="bg-white text-black font-bold py-4 px-8 rounded-md border-2 border-black brutalist-shadow-sm brutalist-shadow-sm-hover transition-all transform hover:-translate-y-1 hover:-translate-x-1">Download CV</a>
+                <a href="#projects"
+                    class="bg-lime-400 text-black font-bold py-4 px-8 rounded-md border-2 border-black brutalist-shadow-sm brutalist-shadow-sm-hover transition-all transform hover:-translate-y-1 hover:-translate-x-1">View
+                    Projects</a>
+                <a href="VRishikesh_Java_Backend.pdf" download="VRishikesh_Java_Backend.pdf"
+                    class="bg-white text-black font-bold py-4 px-8 rounded-md border-2 border-black brutalist-shadow-sm brutalist-shadow-sm-hover transition-all transform hover:-translate-y-1 hover:-translate-x-1">Download
+                    CV</a>
             </div>
         </section>
 
-<!-- Skills Section -->
+        <!-- Skills Section -->
         <section id="skills" class="py-24">
             <div class="text-center mb-16 scroll-reveal">
                 <h2 class="text-5xl md:text-6xl font-black text-black">Core Competencies</h2>
-                <p class="mt-4 text-lg text-slate-600 max-w-2xl mx-auto">My technical toolkit for building modern, scalable applications.</p>
+                <p class="mt-4 text-lg text-slate-600 max-w-2xl mx-auto">My technical toolkit for building modern,
+                    scalable applications.</p>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <div class="bg-white p-8 rounded-lg border-2 border-black brutalist-shadow-sm scroll-reveal">
                     <h3 class="text-2xl font-bold text-black mb-4">Languages</h3>
                     <div class="flex flex-wrap gap-3">
-                        <span class="bg-lime-400 text-black font-semibold px-4 py-1.5 rounded-md border-2 border-black">Java 8+</span>
-                        <span class="bg-slate-200 text-black font-medium px-4 py-1.5 rounded-md border-2 border-black">Python</span>
-                        <span class="bg-slate-200 text-black font-medium px-4 py-1.5 rounded-md border-2 border-black">JavaScript</span>
-                        <span class="bg-slate-200 text-black font-medium px-4 py-1.5 rounded-md border-2 border-black">SQL</span>
+                        <span
+                            class="bg-lime-400 text-black font-semibold px-4 py-1.5 rounded-md border-2 border-black">Java
+                            8+</span>
+                        <span
+                            class="bg-slate-200 text-black font-medium px-4 py-1.5 rounded-md border-2 border-black">Python</span>
+                        <span
+                            class="bg-slate-200 text-black font-medium px-4 py-1.5 rounded-md border-2 border-black">JavaScript</span>
+                        <span
+                            class="bg-slate-200 text-black font-medium px-4 py-1.5 rounded-md border-2 border-black">SQL</span>
                     </div>
                 </div>
-                <div class="bg-white p-8 rounded-lg border-2 border-black brutalist-shadow-sm scroll-reveal" style="transition-delay: 150ms;">
+                <div class="bg-white p-8 rounded-lg border-2 border-black brutalist-shadow-sm scroll-reveal"
+                    style="transition-delay: 150ms;">
                     <h3 class="text-2xl font-bold text-black mb-4">Frameworks & Libraries</h3>
                     <div class="flex flex-wrap gap-3">
-                        <span class="bg-lime-400 text-black font-semibold px-4 py-1.5 rounded-md border-2 border-black">Spring Boot</span>
-                        <span class="bg-lime-400 text-black font-semibold px-4 py-1.5 rounded-md border-2 border-black">Spring Cloud</span>
-                        <span class="bg-slate-200 text-black font-medium px-4 py-1.5 rounded-md border-2 border-black">Kafka</span>
-                        <span class="bg-slate-200 text-black font-medium px-4 py-1.5 rounded-md border-2 border-black">JPA</span>
-                        <span class="bg-slate-200 text-black font-medium px-4 py-1.5 rounded-md border-2 border-black">Django</span>
+                        <span
+                            class="bg-lime-400 text-black font-semibold px-4 py-1.5 rounded-md border-2 border-black">Spring
+                            Boot</span>
+                        <span
+                            class="bg-lime-400 text-black font-semibold px-4 py-1.5 rounded-md border-2 border-black">Spring
+                            Cloud</span>
+                        <span
+                            class="bg-slate-200 text-black font-medium px-4 py-1.5 rounded-md border-2 border-black">Kafka</span>
+                        <span
+                            class="bg-slate-200 text-black font-medium px-4 py-1.5 rounded-md border-2 border-black">JPA</span>
+                        <span
+                            class="bg-slate-200 text-black font-medium px-4 py-1.5 rounded-md border-2 border-black">Django</span>
                     </div>
                 </div>
-                <div class="bg-white p-8 rounded-lg border-2 border-black brutalist-shadow-sm scroll-reveal" style="transition-delay: 300ms;">
+                <div class="bg-white p-8 rounded-lg border-2 border-black brutalist-shadow-sm scroll-reveal"
+                    style="transition-delay: 300ms;">
                     <h3 class="text-2xl font-bold text-black mb-4">Cloud, DevOps & DBs</h3>
                     <div class="flex flex-wrap gap-3">
-                        <span class="bg-lime-400 text-black font-semibold px-4 py-1.5 rounded-md border-2 border-black">Azure</span>
-                        <span class="bg-lime-400 text-black font-semibold px-4 py-1.5 rounded-md border-2 border-black">SAP BTP</span>
-                        <span class="bg-lime-400 text-black font-semibold px-4 py-1.5 rounded-md border-2 border-black">MySQL</span>
-                        <span class="bg-slate-200 text-black font-medium px-4 py-1.5 rounded-md border-2 border-black">Docker</span>
-                        <span class="bg-slate-200 text-black font-medium px-4 py-1.5 rounded-md border-2 border-black">Kubernetes</span>
+                        <span
+                            class="bg-lime-400 text-black font-semibold px-4 py-1.5 rounded-md border-2 border-black">Azure</span>
+                        <span
+                            class="bg-lime-400 text-black font-semibold px-4 py-1.5 rounded-md border-2 border-black">SAP
+                            BTP</span>
+                        <span
+                            class="bg-lime-400 text-black font-semibold px-4 py-1.5 rounded-md border-2 border-black">MySQL</span>
+                        <span
+                            class="bg-slate-200 text-black font-medium px-4 py-1.5 rounded-md border-2 border-black">Docker</span>
+                        <span
+                            class="bg-slate-200 text-black font-medium px-4 py-1.5 rounded-md border-2 border-black">Kubernetes</span>
                     </div>
                 </div>
-                <div class="bg-white p-8 rounded-lg border-2 border-black brutalist-shadow-sm scroll-reveal" style="transition-delay: 450ms;">
+                <div class="bg-white p-8 rounded-lg border-2 border-black brutalist-shadow-sm scroll-reveal"
+                    style="transition-delay: 450ms;">
                     <h3 class="text-2xl font-bold text-black mb-4">API & Integration</h3>
                     <div class="flex flex-wrap gap-3">
-                        <span class="bg-lime-400 text-black font-semibold px-4 py-1.5 rounded-md border-2 border-black">RESTful APIs</span>
-                        <span class="bg-slate-200 text-black font-medium px-4 py-1.5 rounded-md border-2 border-black">Swagger/OpenAPI</span>
-                        <span class="bg-slate-200 text-black font-medium px-4 py-1.5 rounded-md border-2 border-black">JSON</span>
+                        <span
+                            class="bg-lime-400 text-black font-semibold px-4 py-1.5 rounded-md border-2 border-black">RESTful
+                            APIs</span>
+                        <span
+                            class="bg-slate-200 text-black font-medium px-4 py-1.5 rounded-md border-2 border-black">Swagger/OpenAPI</span>
+                        <span
+                            class="bg-slate-200 text-black font-medium px-4 py-1.5 rounded-md border-2 border-black">JSON</span>
                     </div>
                 </div>
-                <div class="bg-white p-8 rounded-lg border-2 border-black brutalist-shadow-sm scroll-reveal" style="transition-delay: 600ms;">
+                <div class="bg-white p-8 rounded-lg border-2 border-black brutalist-shadow-sm scroll-reveal"
+                    style="transition-delay: 600ms;">
                     <h3 class="text-2xl font-bold text-black mb-4">Testing & QA</h3>
                     <div class="flex flex-wrap gap-3">
-                        <span class="bg-lime-400 text-black font-semibold px-4 py-1.5 rounded-md border-2 border-black">JUnit</span>
-                        <span class="bg-lime-400 text-black font-semibold px-4 py-1.5 rounded-md border-2 border-black">Mockito</span>
-                        <span class="bg-slate-200 text-black font-medium px-4 py-1.5 rounded-md border-2 border-black">JMeter</span>
+                        <span
+                            class="bg-lime-400 text-black font-semibold px-4 py-1.5 rounded-md border-2 border-black">JUnit</span>
+                        <span
+                            class="bg-lime-400 text-black font-semibold px-4 py-1.5 rounded-md border-2 border-black">Mockito</span>
+                        <span
+                            class="bg-slate-200 text-black font-medium px-4 py-1.5 rounded-md border-2 border-black">JMeter</span>
                     </div>
                 </div>
-                <div class="bg-white p-8 rounded-lg border-2 border-black brutalist-shadow-sm scroll-reveal" style="transition-delay: 750ms;">
+                <div class="bg-white p-8 rounded-lg border-2 border-black brutalist-shadow-sm scroll-reveal"
+                    style="transition-delay: 750ms;">
                     <h3 class="text-2xl font-bold text-black mb-4">Methodologies</h3>
                     <div class="flex flex-wrap gap-3">
-                        <span class="bg-lime-400 text-black font-semibold px-4 py-1.5 rounded-md border-2 border-black">Agile (Scrum)</span>
+                        <span
+                            class="bg-lime-400 text-black font-semibold px-4 py-1.5 rounded-md border-2 border-black">Agile
+                            (Scrum)</span>
                     </div>
                 </div>
             </div>
         </section>
 
-<!-- Experience & Education Section
-        <section id="experience" class="py-24">
-            <div class="text-center mb-16 scroll-reveal">
-                <h2 class="text-5xl md:text-6xl font-black text-black">Experience & Education</h2>
-                <p class="mt-4 text-lg text-slate-600 max-w-2xl mx-auto">My professional and academic journey, highlighting key roles and accomplishments.</p>
-            </div>
-            <div class="max-w-3xl mx-auto space-y-12">
-                <div class="scroll-reveal">
-                    <div class="bg-white p-8 rounded-lg border-2 border-black brutalist-shadow">
-                        <p class="text-slate-600 font-semibold">Jul 2023 – Present</p>
-                        <h3 class="text-3xl font-bold text-black mt-2">Associate Software Developer</h3>
-                        <p class="text-xl font-semibold text-slate-700">Incture Technologies</p>
-                        <ul class="mt-4 list-disc list-outside ml-5 space-y-2 text-slate-700">
-                            <li>Played a pivotal role in developing the Intelligent Work Management microservice by implementing key technologies essential for the central task management system.</li>
-                            <li>Contributed to multiple customer projects by designing tailored solutions and managing the successful deployment of the Intelligent Work Management system.</li>
-                            <li>Optimized the codebase for seamless cross-platform deployment, ensuring full compatibility with both Azure and SAP BTP platforms.</li>
-                        </ul>
-                    </div>
-                </div>
-                 <div class="scroll-reveal" style="transition-delay: 150ms;">
-                    <div class="bg-white p-8 rounded-lg border-2 border-black brutalist-shadow">
-                        <p class="text-slate-600 font-semibold">Jan 2023 – Jul 2023</p>
-                        <h3 class="text-3xl font-bold text-black mt-2">Academic Intern</h3>
-                        <p class="text-xl font-semibold text-slate-700">Incture Technologies</p>
-                         <ul class="mt-4 list-disc list-outside ml-5 space-y-2 text-slate-700">
-                            <li>Upgraded core backend services from Spring 2.6 to Spring 3.4, refactoring deprecated code and enhancing security, improving system maintainability and reliability.</li>
-                            <li>Improved application performance by tuning database queries (MySQL) and implementing Hibernate caching, reducing response times and resource utilization.</li>
-                            <li>Assisted in maintaining Docker and Kubernetes configurations for existing CI/CD pipelines, supporting deployments to SAP BTP and Azure.</li>
-                        </ul>
-                    </div>
-                </div>
-                 <div class="scroll-reveal" style="transition-delay: 300ms;">
-                    <div class="bg-white p-8 rounded-lg border-2 border-black brutalist-shadow">
-                        <p class="text-slate-600 font-semibold">2019 – 2023</p>
-                        <h3 class="text-3xl font-bold text-black mt-2">Bachelor of Engineering, CSE</h3>
-                        <p class="text-xl font-semibold text-slate-700">SRM Valliammai Engineering College</p>
-                        <p class="mt-4 text-slate-700">Graduated with a CGPA of 8.76, focusing on computer science fundamentals, data structures, and algorithms.</p>
-                    </div>
-                </div>
-            </div>
-        </section>      -->
-
         <!-- Experience & Education Section -->
         <section id="experience" class="py-24">
             <div class="text-center mb-16 scroll-reveal">
                 <h2 class="text-5xl md:text-6xl font-black text-black">Experience & Education</h2>
-                <p class="mt-4 text-lg text-slate-600 max-w-2xl mx-auto">My professional and academic journey, highlighting key roles and accomplishments.</p>
+                <p class="mt-4 text-lg text-slate-600 max-w-2xl mx-auto">My professional and academic journey,
+                    highlighting key roles and accomplishments.</p>
             </div>
             <div class="relative max-w-3xl mx-auto">
                 <div class="absolute left-4 -ml-px w-1 h-full bg-black md:left-1/2"></div>
@@ -230,7 +343,7 @@
                 <div class="relative scroll-reveal pl-12 md:pl-0">
                     <div class="md:flex items-start md:flex-row-reverse">
                         <div class="md:w-1/2 md:pl-8">
-                             <div class="bg-white p-8 rounded-lg border-2 border-black brutalist-shadow">
+                            <div class="bg-white p-8 rounded-lg border-2 border-black brutalist-shadow">
                                 <p class="text-slate-600 font-semibold">Jul 2023 – Present</p>
                                 <h3 class="text-3xl font-bold text-black mt-2">Associate Software Developer</h3>
                                 <p class="text-xl font-semibold text-slate-700">Incture Technologies</p>
@@ -241,85 +354,104 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="w-8 h-8 rounded-full bg-lime-400 border-4 border-black absolute left-4 -translate-x-1/2 top-4 md:left-1/2 md:-translate-x-1/2"></div>
+                        <div
+                            class="w-8 h-8 rounded-full bg-lime-400 border-4 border-black absolute left-4 -translate-x-1/2 top-4 md:left-1/2 md:-translate-x-1/2">
+                        </div>
                         <div class="md:w-1/2"></div>
                     </div>
                 </div>
                 <!-- Intern -->
                 <div class="relative mt-12 scroll-reveal pl-12 md:pl-0">
-                     <div class="md:flex items-start">
+                    <div class="md:flex items-start">
                         <div class="md:w-1/2 md:pr-8">
-                             <div class="bg-white p-8 rounded-lg border-2 border-black brutalist-shadow md:text-right">
+                            <div class="bg-white p-8 rounded-lg border-2 border-black brutalist-shadow md:text-right">
                                 <p class="text-slate-600 font-semibold">Jan 2023 – Jul 2023</p>
                                 <h3 class="text-3xl font-bold text-black mt-2">Academic Intern</h3>
                                 <p class="text-xl font-semibold text-slate-700">Incture Technologies</p>
-                                 <ul class="mt-4 list-disc list-outside ml-5 space-y-2 text-slate-700 text-left">
-                                    <li>Upgraded backend services to Spring 3.4, enhancing security and refactoring code.</li>
-                                    <li>Improved application performance by tuning database queries and implementing caching.</li>
+                                <ul class="mt-4 list-disc list-outside ml-5 space-y-2 text-slate-700 text-left">
+                                    <li>Upgraded backend services to Spring 3.4, enhancing security and refactoring
+                                        code.</li>
+                                    <li>Improved application performance by tuning database queries and implementing
+                                        caching.</li>
                                     <li>Maintained Docker and Kubernetes configurations for CI/CD pipelines.</li>
                                 </ul>
                             </div>
                         </div>
-                        <div class="w-8 h-8 rounded-full bg-lime-400 border-4 border-black absolute left-4 -translate-x-1/2 top-4 md:left-1/2 md:-translate-x-1/2"></div>
+                        <div
+                            class="w-8 h-8 rounded-full bg-lime-400 border-4 border-black absolute left-4 -translate-x-1/2 top-4 md:left-1/2 md:-translate-x-1/2">
+                        </div>
                         <div class="md:w-1/2"></div>
                     </div>
                 </div>
                 <!-- Education -->
-                 <div class="relative mt-12 scroll-reveal pl-12 md:pl-0">
+                <div class="relative mt-12 scroll-reveal pl-12 md:pl-0">
                     <div class="md:flex items-start md:flex-row-reverse">
                         <div class="md:w-1/2 md:pl-8">
                             <div class="bg-white p-8 rounded-lg border-2 border-black brutalist-shadow">
                                 <p class="text-slate-600 font-semibold">2019 – 2023</p>
                                 <h3 class="text-3xl font-bold text-black mt-2">Bachelor of Engineering, CSE</h3>
                                 <p class="text-xl font-semibold text-slate-700">SRM Valliammai Engineering College</p>
-                                <p class="mt-4 text-slate-700">Graduated with a CGPA of 8.76, focusing on computer science fundamentals, data structures, and algorithms.</p>
+                                <p class="mt-4 text-slate-700">Graduated with a CGPA of 8.76, focusing on computer
+                                    science fundamentals, data structures, and algorithms.</p>
                             </div>
                         </div>
-                        <div class="w-8 h-8 rounded-full bg-lime-400 border-4 border-black absolute left-4 -translate-x-1/2 top-4 md:left-1/2 md:-translate-x-1/2"></div>
+                        <div
+                            class="w-8 h-8 rounded-full bg-lime-400 border-4 border-black absolute left-4 -translate-x-1/2 top-4 md:left-1/2 md:-translate-x-1/2">
+                        </div>
                         <div class="md:w-1/2"></div>
                     </div>
                 </div>
             </div>
         </section>
 
-	         <!-- Projects Section -->
+        <!-- Projects Section -->
         <section id="projects" class="py-24">
             <div class="text-center mb-16 scroll-reveal">
                 <h2 class="text-5xl md:text-6xl font-black text-black">Featured Projects</h2>
-                <p class="mt-4 text-lg text-slate-600 max-w-2xl mx-auto">A selection of projects that showcase my ability to deliver value and impact.</p>
+                <p class="mt-4 text-lg text-slate-600 max-w-2xl mx-auto">A selection of projects that showcase my
+                    ability to deliver value and impact.</p>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div class="bg-white p-8 rounded-lg border-2 border-black brutalist-shadow transition-all transform hover:-translate-y-2 hover:-translate-x-2 brutalist-shadow-hover scroll-reveal flex flex-col text-left">
+                <div
+                    class="bg-white p-8 rounded-lg border-2 border-black brutalist-shadow transition-all transform hover:-translate-y-2 hover:-translate-x-2 brutalist-shadow-hover scroll-reveal flex flex-col text-left">
                     <div class="flex-grow">
                         <h3 class="text-3xl font-black text-black">Intake Management (J&J)</h3>
-                        <p class="text-slate-600 mt-2 mb-4">Developed a custom microservice with low-code workflows to meet unique client business logic.</p>
+                        <p class="text-slate-600 mt-2 mb-4">Developed a custom microservice with low-code workflows to
+                            meet unique client business logic.</p>
                     </div>
                     <p class="text-2xl font-black text-lime-500 mt-6">-40% Time-to-Market</p>
                 </div>
-                <a href="https://cherrywork.com/intelligent-work-management" target="_blank" rel="noopener noreferrer" class="block bg-white p-8 rounded-lg border-2 border-black brutalist-shadow transition-all transform hover:-translate-y-2 hover:-translate-x-2 brutalist-shadow-hover scroll-reveal flex flex-col text-left" style="transition-delay: 150ms;">
+                <a href="https://cherrywork.com/intelligent-work-management" target="_blank" rel="noopener noreferrer"
+                    class="block bg-white p-8 rounded-lg border-2 border-black brutalist-shadow transition-all transform hover:-translate-y-2 hover:-translate-x-2 brutalist-shadow-hover scroll-reveal flex flex-col text-left"
+                    style="transition-delay: 150ms;">
                     <div class="flex-grow">
                         <h3 class="text-3xl font-black text-black">Intelligent Work Management</h3>
-                        <p class="text-slate-600 mt-2 mb-4">Led the migration of a monolith to a microservices architecture, improving scalability.</p>
+                        <p class="text-slate-600 mt-2 mb-4">Led the migration of a monolith to a microservices
+                            architecture, improving scalability.</p>
                     </div>
                     <p class="text-2xl font-black text-lime-500 mt-6">+50% Deployment Frequency</p>
                 </a>
-                <div class="bg-white p-8 rounded-lg border-2 border-black brutalist-shadow transition-all transform hover:-translate-y-2 hover:-translate-x-2 brutalist-shadow-hover scroll-reveal flex flex-col text-left" style="transition-delay: 300ms;">
+                <div class="bg-white p-8 rounded-lg border-2 border-black brutalist-shadow transition-all transform hover:-translate-y-2 hover:-translate-x-2 brutalist-shadow-hover scroll-reveal flex flex-col text-left"
+                    style="transition-delay: 300ms;">
                     <div class="flex-grow">
                         <h3 class="text-3xl font-black text-black">Full-Stack Personal Portfolio</h3>
-                        <p class="text-slate-600 mt-2 mb-4">Created a comprehensive personal website from scratch, utilizing Django for the backend and JavaScript for a fully responsive frontend experience.</p>
+                        <p class="text-slate-600 mt-2 mb-4">Created a comprehensive personal website from scratch,
+                            utilizing Django for the backend and JavaScript for a fully responsive frontend experience.
+                        </p>
                     </div>
                     <p class="text-2xl font-black text-lime-500 mt-6">AWS Deployed</p>
                 </div>
             </div>
         </section>
-        
-		 <!-- Awards Section -->
+
+        <!-- Awards Section -->
         <section id="awards" class="py-24">
             <div class="text-center mb-16 scroll-reveal">
                 <h2 class="text-5xl md:text-6xl font-black text-black">Awards & Recognition</h2>
-                <p class="mt-4 text-lg text-slate-600 max-w-2xl mx-auto">Recognition for my contributions and commitment to excellence.</p>
+                <p class="mt-4 text-lg text-slate-600 max-w-2xl mx-auto">Recognition for my contributions and commitment
+                    to excellence.</p>
             </div>
-             <div class="max-w-3xl mx-auto">
+            <div class="max-w-3xl mx-auto">
                 <div class="bg-white p-8 rounded-lg border-2 border-black brutalist-shadow">
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                         <div class="scroll-reveal">
@@ -327,7 +459,8 @@
                             <h3 class="text-3xl font-bold text-black mt-2">Innovator of the Quarter</h3>
                             <p class="text-xl font-semibold text-slate-700">Incture Technologies</p>
                         </div>
-                        <div class="scroll-reveal md:border-l-2 border-black md:pl-8 border-t-2 md:border-t-0 border-black pt-8 md:pt-0 mt-8 md:mt-0" style="transition-delay: 150ms;">
+                        <div class="scroll-reveal md:border-l-2 border-black md:pl-8 border-t-2 md:border-t-0 border-black pt-8 md:pt-0 mt-8 md:mt-0"
+                            style="transition-delay: 150ms;">
                             <p class="text-slate-600 font-semibold">Q3 2023-2024</p>
                             <h3 class="text-3xl font-bold text-black mt-2">Rising Star of Incture</h3>
                             <p class="text-xl font-semibold text-slate-700">Incture Technologies</p>
@@ -339,17 +472,23 @@
 
         <!-- Contact Section -->
         <section id="contact" class="py-24">
-             <div class="bg-white p-10 md:p-16 rounded-lg border-2 border-black brutalist-shadow text-center scroll-reveal">
-                <h2 class="text-5xl md:text-6xl font-black text-black">Let's <span class="text-lime-500">Connect</span></h2>
-                <p class="mt-4 text-lg text-slate-700 max-w-xl mx-auto">I'm currently open to new opportunities. Feel free to reach out if you think my skills are a good fit for your team.</p>
+            <div
+                class="bg-white p-10 md:p-16 rounded-lg border-2 border-black brutalist-shadow text-center scroll-reveal">
+                <h2 class="text-5xl md:text-6xl font-black text-black">Let's <span class="text-lime-500">Connect</span>
+                </h2>
+                <p class="mt-4 text-lg text-slate-700 max-w-xl mx-auto">I'm currently open to new opportunities. Feel
+                    free to reach out if you think my skills are a good fit for your team.</p>
                 <div class="mt-12 grid grid-cols-1 sm:grid-cols-3 gap-8">
-                    <a href="mailto:rishikesh1113@gmail.com" class="bg-white text-black font-bold py-6 px-4 rounded-md border-2 border-black brutalist-shadow-sm hover:bg-lime-400 transition-all transform hover:-translate-y-1 hover:-translate-x-1 brutalist-shadow-sm-hover">
+                    <a href="mailto:rishikesh1113@gmail.com"
+                        class="bg-white text-black font-bold py-6 px-4 rounded-md border-2 border-black brutalist-shadow-sm hover:bg-lime-400 transition-all transform hover:-translate-y-1 hover:-translate-x-1 brutalist-shadow-sm-hover">
                         Email
                     </a>
-                    <a href="https://linkedin.com/in/rishikesh13" target="_blank" rel="noopener noreferrer" class="bg-white text-black font-bold py-6 px-4 rounded-md border-2 border-black brutalist-shadow-sm hover:bg-lime-400 transition-all transform hover:-translate-y-1 hover:-translate-x-1 brutalist-shadow-sm-hover">
+                    <a href="https://linkedin.com/in/rishikesh13" target="_blank" rel="noopener noreferrer"
+                        class="bg-white text-black font-bold py-6 px-4 rounded-md border-2 border-black brutalist-shadow-sm hover:bg-lime-400 transition-all transform hover:-translate-y-1 hover:-translate-x-1 brutalist-shadow-sm-hover">
                         LinkedIn
                     </a>
-                    <a href="https://github.com/rishikesh013" target="_blank" rel="noopener noreferrer" class="bg-white text-black font-bold py-6 px-4 rounded-md border-2 border-black brutalist-shadow-sm hover:bg-lime-400 transition-all transform hover:-translate-y-1 hover:-translate-x-1 brutalist-shadow-sm-hover">
+                    <a href="https://github.com/rishikesh013" target="_blank" rel="noopener noreferrer"
+                        class="bg-white text-black font-bold py-6 px-4 rounded-md border-2 border-black brutalist-shadow-sm hover:bg-lime-400 transition-all transform hover:-translate-y-1 hover:-translate-x-1 brutalist-shadow-sm-hover">
                         GitHub
                     </a>
                 </div>
@@ -377,7 +516,7 @@
                     if (entry.isIntersecting) {
                         const delay = parseInt(entry.target.style.transitionDelay) || 0;
                         setTimeout(() => {
-                           entry.target.classList.add('visible');
+                            entry.target.classList.add('visible');
                         }, delay);
                         observer.unobserve(entry.target);
                     }
@@ -391,15 +530,15 @@
             // Active nav link highlighting
             const sections = document.querySelectorAll('section');
             const navLinks = document.querySelectorAll('.nav-link');
-            
+
             const sectionObserver = new IntersectionObserver((entries) => {
                 let currentSectionId = '';
-                 entries.forEach(entry => {
+                entries.forEach(entry => {
                     if (entry.isIntersecting) {
-                       currentSectionId = entry.target.id;
+                        currentSectionId = entry.target.id;
                     }
                 });
-                
+
                 navLinks.forEach(link => {
                     link.classList.remove('active');
                     if (link.getAttribute('href') === `#${currentSectionId}`) {
@@ -411,13 +550,44 @@
 
             sections.forEach(section => sectionObserver.observe(section));
 
-             // Close mobile menu on link click
+            // Close mobile menu on link click
             mobileMenu.addEventListener('click', (e) => {
-                if(e.target.tagName === 'A'){
+                if (e.target.tagName === 'A') {
                     mobileMenu.classList.add('hidden');
                 }
             });
         });
+
+        // Custom Cursor
+        const cursor = document.getElementById('custom-cursor');
+        const interactiveElements = document.querySelectorAll('a, button');
+
+        document.addEventListener('mousemove', (e) => {
+            cursor.style.left = e.clientX + 'px';
+            cursor.style.top = e.clientY + 'px';
+        });
+
+        interactiveElements.forEach(el => {
+            el.addEventListener('mouseenter', () => cursor.classList.add('hover'));
+            el.addEventListener('mouseleave', () => cursor.classList.remove('hover'));
+        });
+        document.addEventListener('DOMContentLoaded', () => {
+            // Typing animation
+            const typingText = document.getElementById('typing-text');
+            const textToType = "V Rishikesh";
+            let i = 0;
+            function typeWriter() {
+                if (i < textToType.length) {
+                    typingText.innerHTML += textToType.charAt(i);
+                    i++;
+                    setTimeout(typeWriter, 150); // Speed of typing in milliseconds
+                }
+            }
+
+            // Start the animation
+            typeWriter();
+        });
     </script>
 </body>
+
 </html>
