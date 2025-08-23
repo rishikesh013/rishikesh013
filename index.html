@@ -8,7 +8,7 @@
     <!-- SEO Meta Tags -->
     <title>V Rishikesh - Associate Software Developer</title>
     <meta name="description"
-        content="Personal portfolio of V Rishikesh, an Associate Software Developer specializing in Java, Spring Boot, and scalable backend systems based in Bengaluru.">
+        content="Personal portfolio of V Rishikesh, an Software Developer specializing in Java, Spring Boot, and scalable backend systems based in Bengaluru.">
     <meta name="keywords"
         content="V Rishikesh, Software Developer, Java, Spring Boot, Microservices, Backend Developer, Portfolio, Bengaluru, Incture Technologies, AWS, Azure">
     <meta name="author" content="V Rishikesh">
@@ -17,16 +17,16 @@
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://rishikesh013.github.io/">
-    <meta property="og:title" content="V Rishikesh - Associate Software Developer">
+    <meta property="og:url" content="https://www.linkedin.com/in/rishikesh13/">
+    <meta property="og:title" content="V Rishikesh - Software Developer">
     <meta property="og:description"
         content="Personal portfolio showcasing the skills and projects of V Rishikesh, a backend developer specializing in Java and Spring Boot.">
     <meta property="og:image" content="https://placehold.co/1200x630/000000/a3e635?text=VR">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://rishikesh013.github.io/">
-    <meta property="twitter:title" content="V Rishikesh - Associate Software Developer">
+    <meta property="twitter:url" content="https://www.linkedin.com/in/rishikesh13/">
+    <meta property="twitter:title" content="V Rishikesh - Software Developer">
     <meta property="twitter:description"
         content="Personal portfolio showcasing the skills and projects of V Rishikesh, a backend developer specializing in Java and Spring Boot.">
     <meta property="twitter:image" content="https://placehold.co/1200x630/000000/a3e635?text=VR">
@@ -82,33 +82,31 @@
         }
 
         /* Cursor stule */
+        /* Custom Cursor for Desktop Only */
         @media (pointer: fine) {
             body {
                 cursor: none;
             }
-
-            a,
-            button {
+            a, button {
                 cursor: none;
             }
-
             #custom-cursor {
                 position: fixed;
+                top: 0;
+                left: 0;
                 width: 12px;
                 height: 12px;
                 background-color: black;
                 border-radius: 50%;
                 pointer-events: none;
-                transform: translate(-50%, -50%);
-                transition: all 0.2s ease-out;
+                transform: translate(var(--x, 0), var(--y, 0));
+                transition: width 0.2s, height 0.2s, background-color 0.2s;
                 z-index: 9999;
             }
-
             #custom-cursor.hover {
-                width: 32px;
-                height: 32px;
-                background-color: transparent;
-                border: 2px solid #a3e635;
+                width: 40px;
+                height: 40px;
+                background-color: rgba(163, 230, 53, 0.5);
             }
         }
 
@@ -147,8 +145,8 @@
       "@context": "https://schema.org",
       "@type": "Person",
       "name": "V Rishikesh",
-      "url": "https://rishikesh013.github.io/",
-      "jobTitle": "Associate Software Developer",
+      "url": "https://www.linkedin.com/in/rishikesh13/",
+      "jobTitle": "Software Developer",
       "worksFor": {
         "@type": "Organization",
         "name": "Incture Technologies"
@@ -224,7 +222,7 @@
             </h1>
             <p class="mt-4 text-xl md:text-2xl text-slate-700 font-semibold max-w-3xl scroll-reveal"
                 style="transition-delay: 150ms;">
-                Associate Software Developer <span class="text-lime-500">//</span> Specializing in Java, Spring Boot,
+                Software Developer <span class="text-lime-500">//</span> Specialized in Java, Spring Boot,
                 and Microservices Architecture.
             </p>
             <div class="mt-10 flex flex-wrap justify-center gap-4 scroll-reveal" style="transition-delay: 300ms;">
@@ -257,6 +255,8 @@
                             class="bg-slate-200 text-black font-medium px-4 py-1.5 rounded-md border-2 border-black">JavaScript</span>
                         <span
                             class="bg-slate-200 text-black font-medium px-4 py-1.5 rounded-md border-2 border-black">SQL</span>
+                            <span
+                            class="bg-slate-200 text-black font-medium px-4 py-1.5 rounded-md border-2 border-black">Hana</span>
                     </div>
                 </div>
                 <div class="bg-white p-8 rounded-lg border-2 border-black brutalist-shadow-sm scroll-reveal"
@@ -340,12 +340,35 @@
             </div>
             <div class="relative max-w-3xl mx-auto">
                 <div class="absolute left-4 -ml-px w-1 h-full bg-black md:left-1/2"></div>
+
+                                <!-- Software Developer -->
+                <div class="relative mt-12 scroll-reveal pl-12 md:pl-0">
+                    <div class="md:flex items-start">
+                        <div class="md:w-1/2 md:pr-8">
+                            <div class="bg-white p-8 rounded-lg border-2 border-black brutalist-shadow md:text-right">
+                                <p class="text-slate-600 font-semibold">Jul 2025 – Present</p>
+                                <h3 class="text-3xl font-bold text-black mt-2">Software Developer</h3>
+                                <p class="text-xl font-semibold text-slate-700">Incture Technologies</p>
+                                <ul class="mt-4 list-disc list-outside ml-5 space-y-2 text-slate-700 text-left">
+                                    <li>Collaborated with cross-functional teams in Agile across all phases of the SDLC.</li>
+                                    <li>Built a messaging service integrated with Microsoft Teams and WhatsApp to meet critical business needs.</li>
+                                    <!-- <li>Maintained Docker and Kubernetes configurations for CI/CD pipelines.</li> -->
+                                </ul>
+                            </div>
+                        </div>
+                        <div
+                            class="w-8 h-8 rounded-full bg-lime-400 border-4 border-black absolute left-4 -translate-x-1/2 top-4 md:left-1/2 md:-translate-x-1/2">
+                        </div>
+                        <div class="md:w-1/2"></div>
+                    </div>
+                </div>
+
                 <!-- Associate Developer -->
                 <div class="relative scroll-reveal pl-12 md:pl-0">
                     <div class="md:flex items-start md:flex-row-reverse">
                         <div class="md:w-1/2 md:pl-8">
                             <div class="bg-white p-8 rounded-lg border-2 border-black brutalist-shadow">
-                                <p class="text-slate-600 font-semibold">Jul 2023 – Present</p>
+                                <p class="text-slate-600 font-semibold">Jul 2023 – Jun 2025</p>
                                 <h3 class="text-3xl font-bold text-black mt-2">Associate Software Developer</h3>
                                 <p class="text-xl font-semibold text-slate-700">Incture Technologies</p>
                                 <ul class="mt-4 list-disc list-outside ml-5 space-y-2 text-slate-700">
@@ -560,18 +583,20 @@
         });
 
         // Custom Cursor
-        const cursor = document.getElementById('custom-cursor');
-        const interactiveElements = document.querySelectorAll('a, button');
+             if (window.matchMedia("(pointer: fine)").matches) {
+                const cursor = document.getElementById('custom-cursor');
+                const interactiveElements = document.querySelectorAll('a, button');
 
-        document.addEventListener('mousemove', (e) => {
-            cursor.style.left = e.clientX + 'px';
-            cursor.style.top = e.clientY + 'px';
-        });
+                document.addEventListener('mousemove', (e) => {
+                    cursor.style.setProperty('--x', (e.clientX - 6) + 'px');
+                    cursor.style.setProperty('--y', (e.clientY - 6) + 'px');
+                });
 
-        interactiveElements.forEach(el => {
-            el.addEventListener('mouseenter', () => cursor.classList.add('hover'));
-            el.addEventListener('mouseleave', () => cursor.classList.remove('hover'));
-        });
+                interactiveElements.forEach(el => {
+                    el.addEventListener('mouseenter', () => cursor.classList.add('hover'));
+                    el.addEventListener('mouseleave', () => cursor.classList.remove('hover'));
+                });
+            }
         document.addEventListener('DOMContentLoaded', () => {
             // Typing animation
             const typingText = document.getElementById('typing-text');
