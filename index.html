@@ -4,17 +4,24 @@
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width,initial-scale=1"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; script-src 'self' 'unsafe-inline'; base-uri 'self'; form-action 'none'; frame-ancestors 'none';"/>
+<meta name="theme-color" content="#f7f6f2"/>
+<meta name="color-scheme" content="light"/>
 <title>V Rishikesh | Software Developer — Java, Spring Boot & Microservices · Bengaluru</title>
 <meta name="description" content="V Rishikesh is an award-winning Software Developer at Incture Technologies, Bengaluru with 3+ years building scalable Java & Spring Boot microservices. Served 10k+ users, cut response times 30%, published on SAP App Store."/>
 <meta name="keywords" content="V Rishikesh, Software Developer, Java Developer, Spring Boot, Microservices, Backend Developer, Bengaluru, Incture Technologies, AWS, Azure, SAP BTP, Docker, Kubernetes, REST API"/>
 <meta name="author" content="V Rishikesh"/>
-<meta name="robots" content="index, follow"/>
+<meta name="robots" content="index, follow, max-image-preview:large"/>
 <link rel="canonical" href="https://rishikeshv.xyz/"/>
 <meta property="og:type" content="website"/>
 <meta property="og:url" content="https://rishikeshv.xyz/"/>
+<meta property="og:site_name" content="V Rishikesh"/>
 <meta property="og:title" content="V Rishikesh | Software Developer — Java & Spring Boot"/>
 <meta property="og:description" content="Award-winning backend engineer with 3+ years in Java, Spring Boot & microservices. 10k+ users served, SAP App Store publisher, Incture Technologies."/>
 <meta property="og:image" content="https://rishikeshv.xyz/og-image.png"/>
+<meta property="og:image:width" content="1200"/>
+<meta property="og:image:height" content="630"/>
+<meta property="og:image:alt" content="V Rishikesh — Software Developer portfolio"/>
 <meta property="og:locale" content="en_IN"/>
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:title" content="V Rishikesh | Software Developer"/>
@@ -22,7 +29,11 @@
 <meta name="twitter:image" content="https://rishikeshv.xyz/og-image.png"/>
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet"/>
+<!-- Non-blocking font load: paints immediately with system fonts on slow
+     networks (2G/3G), then swaps to webfonts once fetched. -->
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&family=DM+Mono:wght@400;500&display=swap"/>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" media="print" onload="this.media='all'"/>
+<noscript><link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet"/></noscript>
 <script type="application/ld+json">
 [{"@context":"https://schema.org","@type":"Person","name":"V Rishikesh","url":"https://rishikeshv.xyz/","jobTitle":"Software Developer","description":"Award-winning Software Developer specializing in Java, Spring Boot, and microservices architecture.","telephone":"+919791055510","email":"rishikesh1113@gmail.com","address":{"@type":"PostalAddress","addressLocality":"Bengaluru","addressRegion":"Karnataka","addressCountry":"IN"},"worksFor":{"@type":"Organization","name":"Incture Technologies","url":"https://incture.com"},"alumniOf":{"@type":"CollegeOrUniversity","name":"SRM Valliammai Engineering College"},"sameAs":["https://linkedin.com/in/rishikesh13","https://github.com/rishikesh013"]}]
 </script>
@@ -47,8 +58,8 @@
   --shadow-sm:0 1px 4px rgba(0,0,0,.06);
   --shadow-lg:0 16px 48px rgba(0,0,0,.10),0 4px 16px rgba(0,0,0,.05);
   --shadow-green:0 8px 32px rgba(36,99,68,.18);
-  --mono:'DM Mono',monospace;
-  --sans:'DM Sans',sans-serif;
+  --mono:'DM Mono',ui-monospace,'SF Mono',Consolas,'Liberation Mono',monospace;
+  --sans:'DM Sans',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;
   --nav-h:68px;
   --r:14px;
   --r-sm:8px;
@@ -155,6 +166,10 @@ body::before{
   }
   #cur-r.big{width:64px;height:64px;opacity:.12;border-color:var(--accent-mid)}
 }
+@media(pointer:fine) and (prefers-reduced-motion:reduce){
+  body,a,button{cursor:auto}
+  #cur,#cur-r{display:none}
+}
 
 /* NAV */
 body > header{
@@ -231,7 +246,14 @@ section[id]{scroll-margin-top:calc(var(--nav-h) + 20px)}
 /* REVEAL */
 .rv{opacity:0;transform:translateY(28px);transition:opacity .65s var(--ease),transform .65s var(--ease)}
 .rv.in{opacity:1;transform:none}
-@media(prefers-reduced-motion:reduce){.rv{transition:none!important}}
+@media(prefers-reduced-motion:reduce){
+  .rv{transition:none!important}
+  *,*::before,*::after{animation-duration:.001ms!important;animation-iteration-count:1!important;scroll-behavior:auto!important}
+  .marquee-track{animation:none!important}
+  #hero::after{animation:none!important}
+  .name-word{animation:none!important;transform:none!important}
+  .hero-eyebrow,.hero-sub,.hero-actions,.hero-scroll{animation:none!important;opacity:1!important;transform:none!important}
+}
 
 /* HERO */
 #hero{
@@ -803,7 +825,7 @@ const progress  = document.getElementById('scroll-progress');
 const navLinks  = Array.from(document.querySelectorAll('.nav-link'));
 const sections  = Array.from(document.querySelectorAll('section[id]'));
 const hdr       = document.querySelector('body > header');
-const NAV_H     = parseFloat(getComputedStyle(document.documentElement).getPropertyValue('--nav-h')) || 68;
+let NAV_H = parseFloat(getComputedStyle(document.documentElement).getPropertyValue('--nav-h')) || 68;
 
 /* Friendly display names for the scrollbar tooltip */
 const SECTION_NAMES = {
@@ -847,8 +869,12 @@ function render() {
 function onScroll() {
   if (!ticking) { ticking = true; requestAnimationFrame(render); }
 }
+function onResize() {
+  NAV_H = parseFloat(getComputedStyle(document.documentElement).getPropertyValue('--nav-h')) || 68;
+  onScroll();
+}
 window.addEventListener('scroll', onScroll, { passive: true });
-window.addEventListener('resize', onScroll);
+window.addEventListener('resize', onResize, { passive: true });
 render(); // initial paint, no need to wait for first scroll
 
 /* Show the section-name label while hovering or dragging the scrollbar */
@@ -966,9 +992,13 @@ document.querySelectorAll('.stat-n[data-count]').forEach(el => cntIO.observe(el)
 /* ────────────────────────────────────────
    CUSTOM CURSOR
    (now hides itself over the scrollbar so
-   the real grab/pointer cursor is visible)
+   the real grab/pointer cursor is visible.
+   Skipped entirely if the user prefers
+   reduced motion.)
 ──────────────────────────────────────── */
-if (window.matchMedia('(pointer:fine)').matches) {
+const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+if (window.matchMedia('(pointer:fine)').matches && !prefersReducedMotion) {
   const dot  = document.getElementById('cur');
   const ring = document.getElementById('cur-r');
   let mx = -100, my = -100, rx = -100, ry = -100;
@@ -986,11 +1016,21 @@ if (window.matchMedia('(pointer:fine)').matches) {
   document.addEventListener('mousedown', () => dot.classList.add('click'));
   document.addEventListener('mouseup',   () => dot.classList.remove('click'));
 
-  (function tick() {
+  /* Lerp loop for the trailing ring — paused while the tab is hidden
+     so it doesn't burn CPU/battery in a background tab indefinitely. */
+  let rafId = null;
+  function tick() {
     rx += (mx - rx) * .1; ry += (my - ry) * .1;
     ring.style.transform = `translate(${rx}px,${ry}px) translate(-50%,-50%)`;
-    requestAnimationFrame(tick);
-  })();
+    rafId = requestAnimationFrame(tick);
+  }
+  function startTick() { if (rafId === null) rafId = requestAnimationFrame(tick); }
+  function stopTick()  { if (rafId !== null) { cancelAnimationFrame(rafId); rafId = null; } }
+
+  startTick();
+  document.addEventListener('visibilitychange', () => {
+    if (document.hidden) stopTick(); else startTick();
+  });
 
   /* Only enlarge the cursor over "big" interactive surfaces (buttons, cards) —
      never over small text links like nav items, where the enlarged dot would
@@ -1009,12 +1049,18 @@ if (window.matchMedia('(pointer:fine)').matches) {
    MAGNETIC BUTTONS
 ──────────────────────────────────────── */
 function magneticBtn(el) {
-  if (!el || !window.matchMedia('(pointer:fine)').matches) return;
-  el.addEventListener('mousemove', e => {
+  if (!el || prefersReducedMotion || !window.matchMedia('(pointer:fine)').matches) return;
+  let pending = false, lastX = 0, lastY = 0;
+  function apply() {
+    pending = false;
     const r  = el.getBoundingClientRect();
-    const dx = e.clientX - (r.left + r.width  / 2);
-    const dy = e.clientY - (r.top  + r.height / 2);
+    const dx = lastX - (r.left + r.width  / 2);
+    const dy = lastY - (r.top  + r.height / 2);
     el.style.transform = `translate(${dx * .28}px, ${dy * .28}px)`;
+  }
+  el.addEventListener('mousemove', e => {
+    lastX = e.clientX; lastY = e.clientY;
+    if (!pending) { pending = true; requestAnimationFrame(apply); }
   });
   el.addEventListener('mouseleave', () => {
     el.style.transform = '';
